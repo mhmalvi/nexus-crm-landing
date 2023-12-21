@@ -25,3 +25,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.bgImage {
+  background: rgb(24, 4, 50);
+  background: linear-gradient(
+    32deg,
+    rgba(24, 4, 50, 1) 0%,
+    rgba(44, 8, 91, 1) 30%,
+    rgba(60, 5, 131, 1) 70%,
+    rgba(24, 4, 50, 1) 100%
+  );
+}
+
+.section7bg{
+  background: rgb(24,4,50);
+background: linear-gradient(32deg, rgba(24,4,50,1) 0%, rgba(44,8,91,1) 30%, rgba(60,5,131,1) 70%, rgba(24,4,50,1) 100%);
+}

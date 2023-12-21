@@ -1,0 +1,25 @@
+.rocket {
+  animation: rocketMove 5s linear infinite;
+  /* transform-origin: center; */
+}
+.cloudLine {
+  animation: lineIncrease 5s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rocketMove {
+  0% {
+    transform: translate(-3px,0px);
+  }
+  100% {
+    transform: translate(-3px,-150px);
+  }
+}
+@keyframes lineIncrease {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
