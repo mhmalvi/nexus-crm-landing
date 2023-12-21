@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./nav.css";
 import Button from "../Components/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const qqCrmLogo = require("../../../public/png/Queleads_Logo.png");
 
@@ -42,7 +43,7 @@ const Nav = () => {
               />
             </a>
           </div>
-          
+
           <div className="col-span-2  w-full flex items-center justify-evenly">
             <Button title={"⚪ Live Product Demo"} variant={1} />
             <Button title={"Free Forever"} variant={1} />
@@ -77,8 +78,20 @@ const Nav = () => {
           </div>
           <div className="col-span-1"></div>
           <div className="col-span-1 flex items-center justify-between">
-            <Button title={"Register"} navigateTo={"/register"} />
-            <Button title={"Login"} navigateTo={"/login"} />
+            <a
+              href="https://app.queleadscrm.com/register"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <Button title={"Register"} />
+            </a>
+            <a
+              href="https://app.queleadscrm.com/login"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <Button title={"Login"} />
+            </a>
           </div>
         </div>
       </div>

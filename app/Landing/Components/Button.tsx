@@ -1,8 +1,7 @@
 import React from "react";
-
 const Button = (props: any) => {
   const { title, variant, width, type } = props;
-  //   const navigate = useNavigate();
+ 
 
   return (
     <button

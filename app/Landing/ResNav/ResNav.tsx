@@ -128,18 +128,20 @@ const ResNav = () => {
               </button>
             </a>
             <a
-              className="astro-W2BEH2IL w-full"
-              // onClick={() => navigate("/register")}
-          
+              className="w-full"
+              href="https://app.queleadscrm.com/register"
+              target={"_blank"}
+              rel={"noreferrer"}
             >
-              <Button title={"Register"} width={"full"}/>
+              <Button title={"Register"} width={"full"} />
             </a>
             <a
               className="w-full"
-              // onClick={() => navigate("/login")}
-           
+              href="https://app.queleadscrm.com/login"
+              target={"_blank"}
+              rel={"noreferrer"}
             >
-             <Button title={"Login"} width={"full"}/>
+              <Button title={"Login"} width={"full"} />
             </a>
           </div>
         </div>
