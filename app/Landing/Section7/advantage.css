@@ -6,25 +6,139 @@
   animation: lineIncrease 5s linear infinite;
   transform-origin: center;
 }
-.flame{
-  animation: flameSwivel 5s linear infinite;
+.flameL {
+  animation: flameSwivelL 5s linear infinite;
   transform-origin: center;
 }
-@keyframes flameSwivel {
+@keyframes flameSwivelL {
   0% {
-    transform: translate(0px,-3px);
+    transform: translate(0px, 0);
+  }
+  25% {
+    transform: translate(-1px, 0);
+  }
+  50% {
+    transform: translate(1px, 0);
+  }
+  75% {
+    transform: translate(-1px, 0);
   }
   100% {
-    transform: translate(0,5px);
+    transform: translate(0px, 0);
+  }
+}
+.flameR {
+  animation: flameSwivelR 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes flameSwivelR {
+  0% {
+    transform: translate(0px, 0);
+  }
+  25% {
+    transform: translate(1px, 0);
+  }
+  50% {
+    transform: translate(-1px, 0);
+  }
+  75% {
+    transform: translate(1px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+.flame1L {
+  animation: flameSwivelL1 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes flameSwivelL1 {
+  0% {
+    transform: translate(0px, 0);
+  }
+  25% {
+    transform: translate(-2px, 0);
+  }
+  50% {
+    transform: translate(2px, 0);
+  }
+  75% {
+    transform: translate(-2px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+.flame1R {
+  animation: flameSwivel1R 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes flameSwivel1R {
+  0% {
+    transform: translate(0px, 0);
+  }
+  25% {
+    transform: translate(2px, 0);
+  }
+  50% {
+    transform: translate(-2px, 0);
+  }
+  75% {
+    transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+.flame2L {
+  animation: flameSwivelL2 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes flameSwivel2L {
+  0% {
+    transform: translate(0px, 0);
+  }
+  25% {
+    transform: translate(-1px, 0);
+  }
+  50% {
+    transform: translate(1px, 0);
+  }
+  75% {
+    transform: translate(-1px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+.flame2R {
+  animation: flameSwivel2R 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes flameSwivel2R {
+  0% {
+    transform: translate(0px, 0);
+  }
+  25% {
+    transform: translate(-1px, 0);
+  }
+  50% {
+    transform: translate(1px, 0);
+  }
+  75% {
+    transform: translate(-1px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
   }
 }
 
 @keyframes rocketMove {
   0% {
-    transform: translate(-3px,0px);
+    transform: translate(-3px, 0px);
   }
   100% {
-    transform: translate(-3px,-150px);
+    transform: translate(-3px, -150px);
   }
 }
 @keyframes lineIncrease {
