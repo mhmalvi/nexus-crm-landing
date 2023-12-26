@@ -41,11 +41,11 @@ const FooterSection = () => {
             </div>
           </div>
           <div className="lg:flex lg:flex-col grid grid-cols-2 lg:gap-4 gap-8 justify-between items-center lg:border-[0px] border-[2px] rounded-[12px] border-[#4D8CFC]">
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer">Terms & Conditions</h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer ">GDPR Policy</h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer ">Privacy Policy</h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer ">Refund Policy</h1>
-            <h1 className="col-span-2 lg:text-start text-center cursor-pointer lg:w-2/5">About Us</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">Terms & Conditions</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">GDPR Policy</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">Privacy Policy</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">Refund Policy</h1>
+            <h1 className="col-span-2 lg:text-start text-center cursor-pointer lg:w-2/5 h-10 lg:h-2 flex justify-center items-center">About Us</h1>
           </div>
           <div className=" flex flex-col justify-between">
             <div className="flex flex-col lg:items-start items-center text-center w-full my-2">

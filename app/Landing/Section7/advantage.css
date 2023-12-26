@@ -6,6 +6,18 @@
   animation: lineIncrease 5s linear infinite;
   transform-origin: center;
 }
+.flame{
+  animation: flameSwivel 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes flameSwivel {
+  0% {
+    transform: translate(0px,-3px);
+  }
+  100% {
+    transform: translate(0,5px);
+  }
+}
 
 @keyframes rocketMove {
   0% {
