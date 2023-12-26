@@ -55,22 +55,22 @@ const Nav = () => {
               } gap-2`}
             >
               <li className="flex items-center justify-end cursor-pointer ">
-                <p className="hover:scale-[0.95] ease-in duration-200 font-[600] m-0">
+                <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
                   Pricing
                 </p>
               </li>
               <li className="flex items-center justify-end cursor-pointer ">
-                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[600] m-0">
+                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
                   Contact Us
                 </p>
               </li>
               <li className="flex items-center justify-end cursor-pointer ">
-                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[600] m-0">
+                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
                   Resources
                 </p>
               </li>
               <li className="flex items-center justify-end cursor-pointer ">
-                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[600] m-0">
+                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
                   Book a Demo
                 </p>
               </li>
