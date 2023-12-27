@@ -20,7 +20,7 @@ const SectionEight = () => {
           </p>
         </div>
         <div className="col-span-4 flex flex-col justify-center lg:min-h-full">
-          <Image src={stats} alt="crm_show" className="w-full"/>
+          <Image src={stats} alt="stats" className="w-full"/>
         </div>
       </div>
     </div>

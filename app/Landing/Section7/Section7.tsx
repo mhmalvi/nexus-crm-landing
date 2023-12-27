@@ -40,7 +40,6 @@ const SectionSeven = () => {
           </ul>
         </div>
         <div className="lg:col-span-1 flex flex-col justify-center lg:min-h-full">
-          {/* <Image src={advantages} alt="crm_show" /> */}
           <div className="">
             <Advantages_SVG />
           </div>
