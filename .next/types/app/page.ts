@@ -1,4 +1,4 @@
-// File: D:\Projects\Quadque projects\CRM-System-Landing\app\page.tsx
+// File: D:\Projects\crm-landing\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
