@@ -9,7 +9,7 @@ const SectionSix = () => {
     <div className="lg:min-h-[60vh] min-h-[90vh] w-full flex items-center justify-center">
       <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col justify-center items-center lg:w-[75vw] w-[90vw] lg:min-h-[60vh] min-h-[90vh] lg:mt-0">
         <div className="col-span-4 flex flex-col justify-center lg:min-h-full">
-          <Image src={crmclipart} alt="QLogo" />
+          <Image src={crmclipart} alt="Crm_clipart" />
         </div>
         <div className="col-span-4 flex flex-col lg:items-end items-center justify-center lg:min-h-full">
           <h6 className="text-[#4D8CFC] text-[32px] lg:w-3/5 w-[90vw] lg:text-right text-center leading-10">
