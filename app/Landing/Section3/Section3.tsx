@@ -21,7 +21,7 @@ const SectionThree = () => {
           </p>
         </div>
         <div className="col-span-3 flex flex-col justify-center lg:min-h-full">
-          <Image src={crm_show} alt="crm_show" />
+          <Image src={crm_show} alt="crm_show" className="w-full"/>
         </div>
       </div>
     </div>
