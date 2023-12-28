@@ -5,20 +5,20 @@ import Image from "next/image";
 import Advantages_SVG from "./Advantages_SVG";
 const SectionSeven = () => {
   return (
-    <div className="lg:min-h-[60vh] min-h-[100vh] w-full flex items-center justify-center section7bg overflow-hidden">
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8 flex flex-col items-center justify-center lg:w-[75vw] w-[90vw] lg:min-h-[60vh] min-h-[90vh] lg:mt-0">
+    <div className=" lg:min-h-[40vh] lg:max-h-[50vh] min-h-[100vh] w-full flex items-center justify-center section7bg overflow-hidden">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-8 flex flex-col items-center justify-center lg:w-[69.5vw] w-[90vw] lg:min-h-[30vh] min-h-[90vh] lg:mt-0">
         <div className="lg:col-span-1 flex flex-col lg:items-start items-center justify-center lg:min-h-full">
-          <h1 className="text-white lg:text-start text-center text-[32px] lg:m-0 mt-4">
+          <h1 className="text-white lg:text-start text-center text-[32px] font-semibold">
             The 5 greatest benefits{" "}
           </h1>
-          <h1 className="text-[#4D8CFC] text-[32px] lg:text-start text-center leading-[40px] lg:mb-12">
+          <h1 className="text-[#4D8CFC] text-[32px] lg:text-start text-center leading-[40px]">
             of Queleads CRM
           </h1>
-          <p className="text-white lg:w-3/5 w-[90vw] text-[1rem] font-[200] lg:text-start text-center">
+          <p className="text-white lg:w-4/5 w-[90vw] text-base lg:text-start text-center my-4">
             While the benefits vary by department or industry, five benefits of
             CRM platforms that affect every user include :
           </p>
-          <ul className="list-inside my-4">
+          <ul className="list-inside">
             <li className="my-2">
               <span className="text-[#4D8CFC]">▣</span> Trustworthy reporting
             </li>

@@ -25,8 +25,31 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
 .bgImage {
+  /* background: rgb(24, 4, 50); */
+  background: linear-gradient(
+    32deg,
+    rgba(24, 4, 50, 1) 0%,
+    rgba(60, 5, 131, 1) 50%,
+    rgba(24, 4, 50, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: bgAnim 10s linear infinite;
+  transform-origin: center;
+}
+@keyframes bgAnim {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.section7bg {
   background: rgb(24, 4, 50);
   background: linear-gradient(
     32deg,
@@ -35,9 +58,6 @@ body {
     rgba(60, 5, 131, 1) 70%,
     rgba(24, 4, 50, 1) 100%
   );
-}
-
-.section7bg{
-  background: rgb(24,4,50);
-background: linear-gradient(32deg, rgba(24,4,50,1) 0%, rgba(44,8,91,1) 30%, rgba(60,5,131,1) 70%, rgba(24,4,50,1) 100%);
+  background-size: 400% 400%;
+  animation: bgAnim 5s linear infinite;
 }

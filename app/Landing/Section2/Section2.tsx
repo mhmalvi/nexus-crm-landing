@@ -33,12 +33,12 @@ const SectionTwo = () => {
   return (
     
       <div className="lg:min-h-[100vh] min-h-[100vh] w-full flex items-center justify-center">
-        <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col flex-col lg:w-[75vw] w-[90vw] lg:min-h-[100vh] min-h-[87vh] lg:mt-0">
+        <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col flex-col lg:w-[69.5vw] w-[90vw] lg:min-h-[100vh] min-h-[87vh] lg:mt-0">
           <div className="col-span-5 flex flex-col lg:items-start items-center justify-center lg:min-h-full">
-            <h6 className="text-[#4D8CFC] text-[32px] m-0">
+            <h6 className="text-[#4D8CFC] font-normal text-[32px]">
               Single Solution to
             </h6>
-            <h1 className="text-white text-[36px] lg:text-start text-center leading-[30px] m-0">
+            <h1 className="text-white text-[36px] font-semibold lg:text-start text-center leading-10 m-0">
               Boost Your Sales and Conversion
             </h1>
             <div className="flex flex-wrap justify-center">
@@ -75,16 +75,14 @@ const SectionTwo = () => {
             <Image className={"ease-in duration-200 "}src={TabData?.image || ""} alt={`${TabData?.tid}`} />
           </div>
           <div className="col-span-3 flex flex-col justify-center lg:items-start items-center lg:text-start text-center lg:h-full">
-            <h1 className="text-[24px]">
+            <h1 className="text-[24px] font-semibold leading-[32px]">
               <span className="text-[#4D8CFC]">{TabData?.title1}</span>{" "}
               <span className="text-white">{TabData?.title2}</span>
             </h1>
-            <h6 className="text-[16px] text-white lg:text-start my-4">
+            <h6 className="text-[16px] leading-[20px] text-white lg:text-start my-4">
               {TabData?.desc}
             </h6>
-            {/* <div className="flex justify-center lg:justify-start">
-              <Button variant={1} title="Next" width="full"/>
-            </div> */}
+            
           </div>
         </div>
       </div>

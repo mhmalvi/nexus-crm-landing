@@ -35,7 +35,7 @@ const SectionFour = () => {
   settings.slidesToShow = slidesToShow;
   return (
     <div className="lg:min-h-[30vh] min-h-[10vh] w-full flex flex-col items-center lg:justify-center justify-start">
-      <h1 className="text-[36px] lg:w-[75vw] text-white">Our Clients</h1>
+      <h1 className="text-[36px] lg:w-[69.5vw] text-white font-semibold">Our Clients</h1>
       <div className="flex flex-col flex-col w-full lg:min-h-[10vh] min-h-[10vh] bg-white opacity-80">
         <div>
           <Slider {...settings}>

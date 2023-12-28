@@ -27,11 +27,11 @@ const Nav = () => {
   return (
     <>
       <div
-        className={`ease-in duration-200 w-full flex items-center justify-center`}
+        className={`ease-in duration-200 w-full flex items-center justify-center `}
       >
         <div
-          className={`ease-in duration-200 crm-menu-desktop w-[95vw] h-[8vh] grid grid-cols-8 gap-4 ${
-            isMenuFixed ? "crm-fixed rounded-b-[12px] w-[100vw]" : ""
+          className={`ease-in duration-200 crm-menu-desktop w-[100vw] h-[8vh] grid grid-cols-8 gap-4 px-[2.5vw] ${
+            isMenuFixed ? "crm-fixed w-[100vw]" : ""
           }`}
         >
           <div className="col-span-1  w-full flex items-center">

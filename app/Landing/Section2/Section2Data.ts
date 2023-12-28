@@ -4,8 +4,8 @@ const TASKMASTERY = require("../../../public/tabmenulistimages/TASK-MASTERY.png"
 const TEAMCRAFT = require("../../../public/tabmenulistimages/TEAM-CRAFT.png");
 const COLLABLEADS = require("../../../public/tabmenulistimages/COLLABLEADS.png");
 
-const tabImage1 = require("../../../public/tabimages/tabiamge1.jpeg");
-const tabImage2 = require("../../../public/tabimages/tabimage2.jpeg");
+const tabImage1 = require("../../../public/tabimages/tabiamge1.png");
+const tabImage2 = require("../../../public/tabimages/tabimage2.png");
 const tabImage3 = require("../../../public/tabimages/tabimage3.jpeg");
 const tabImage4 = require("../../../public/tabimages/tabimage4.jpeg");
 const tabImage5 = require("../../../public/tabimages/tabimage5.jpeg");

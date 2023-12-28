@@ -44,7 +44,7 @@ const Home = () => {
           </>
         )}
 
-       <SectionOne />
+        <SectionOne />
         <SectionTwo />
         <SectionThree />
         <SectionFour />
@@ -53,7 +53,7 @@ const Home = () => {
         <SectionSeven />
         <SectionEight />
         <SectionNine />
-        <SectionTen /> 
+        <SectionTen />
         <FooterSection />
       </div>
     </>

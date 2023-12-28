@@ -20,7 +20,7 @@ const FooterSection = () => {
         background: `url(${FooterBg.src}) center / cover`,
       }}
     >
-      <div className=" flex flex-col justify-center lg:w-[75vw] w-[90vw] lg:min-h-[60vh] min-h-[87vh] lg:mt-0 ">
+      <div className=" flex flex-col justify-center lg:w-[69.5vw] w-[90vw] lg:min-h-[60vh] min-h-[87vh] lg:mt-0 ">
         <Image src={footerLogo} alt="footer_logo" className="lg:mb-20 mb-10 lg:mt-0 mt-10" />
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 lg:mb-16">
           <div className=" flex flex-col">
@@ -41,11 +41,11 @@ const FooterSection = () => {
             </div>
           </div>
           <div className="lg:flex lg:flex-col grid grid-cols-2 lg:gap-4 gap-8 justify-between items-center lg:border-[0px] border-[2px] rounded-[12px] border-[#4D8CFC]">
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">Terms & Conditions</h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">GDPR Policy</h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">Privacy Policy</h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-center items-center">Refund Policy</h1>
-            <h1 className="col-span-2 lg:text-start text-center cursor-pointer lg:w-2/5 h-10 lg:h-2 flex justify-center items-center">About Us</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-start items-center">Terms & Conditions</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-start items-center">GDPR Policy</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-start items-center">Privacy Policy</h1>
+            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-10 lg:h-2 flex justify-start items-center">Refund Policy</h1>
+            <h1 className="col-span-2 lg:text-start text-center cursor-pointer lg:w-2/5 h-10 lg:h-2 flex justify-start items-center">About Us</h1>
           </div>
           <div className=" flex flex-col justify-between">
             <div className="flex flex-col lg:items-start items-center text-center w-full my-2">
@@ -56,10 +56,10 @@ const FooterSection = () => {
                 <AiFillYoutube className="w-[50px] h-[50px]" />
               </div>
             </div>
-            <form className="flex lg:flex-row flex-col justify-between">
+            <form className="flex  flex-col justify-between">
               <input
                 type="email"
-                className="lg:w-3/4 h-[5vh] pl-[14px] w-[90vw] lg:rounded-r-[12px] rounded-[12px] mb-4"
+                className="lg:w-full h-[5vh] pl-[14px] lg:rounded-r-[12px] rounded-[12px] mb-4"
                 placeholder="Join our newsletter."
               />
               <Button title="Join Now" type="submit" />
