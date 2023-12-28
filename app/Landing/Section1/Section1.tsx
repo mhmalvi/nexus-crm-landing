@@ -4,7 +4,7 @@ import HeroSVG from "./HeroSVG";
 import Button from "../Components/Button";
 const SectionOne = () => {
   return (
-    <div className="lg:min-h-[87vh] min-h-[95vh] w-full flex items-center justify-center shadow-2xl">
+    <div className="lg:min-h-[87vh] min-h-[95vh] w-full flex items-center justify-center shadow-xl">
       <div className="lg:grid lg:grid-cols-2 flex flex-col flex-col-reverse lg:w-[69.5vw] w-[90vw] min-h-[87vh] lg:mt-0 mt-[-10vh]">
         <div className="min-h-full flex flex-col lg:items-start items-center justify-center ">
           <div className="flex flex-col mb-8">
