@@ -6,9 +6,9 @@ const COLLABLEADS = require("../../../public/tabmenulistimages/COLLABLEADS.png")
 
 const tabImage1 = require("../../../public/tabimages/tabiamge1.png");
 const tabImage2 = require("../../../public/tabimages/tabimage2.png");
-const tabImage3 = require("../../../public/tabimages/tabimage3.jpeg");
-const tabImage4 = require("../../../public/tabimages/tabimage4.jpeg");
-const tabImage5 = require("../../../public/tabimages/tabimage5.jpeg");
+const tabImage3 = require("../../../public/tabimages/tabimage3.png");
+const tabImage4 = require("../../../public/tabimages/tabimage4.png");
+const tabImage5 = require("../../../public/tabimages/tabimage5.png");
 
 export const tabMenuList = [
   {

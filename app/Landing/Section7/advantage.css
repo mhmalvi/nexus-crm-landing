@@ -149,3 +149,16 @@
     opacity: 0;
   }
 }
+
+.section7bg {
+  background: rgb(24, 4, 50);
+  background: linear-gradient(
+    32deg,
+    rgb(47, 7, 99) 0%,
+    rgb(24, 4, 51) 30%,
+    rgb(43, 5, 94) 70%,
+    rgba(24, 4, 50, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: bgAnim 5s linear infinite;
+}

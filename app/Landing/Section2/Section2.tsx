@@ -72,7 +72,7 @@ const SectionTwo = () => {
               })}
             </div>
             
-            <Image className={"ease-in duration-200 "}src={TabData?.image || ""} alt={`${TabData?.tid}`} />
+            <Image className={"ease-in duration-200 shadow-xl"}src={TabData?.image || ""} alt={`${TabData?.tid}`} />
           </div>
           <div className="col-span-3 flex flex-col justify-center lg:items-start items-center lg:text-start text-center lg:h-full">
             <h1 className="text-[24px] font-semibold leading-[32px]">

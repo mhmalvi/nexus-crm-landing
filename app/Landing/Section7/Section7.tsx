@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-import advantages from "../../../public/png/advantages.png";
-import Image from "next/image";
 import Advantages_SVG from "./Advantages_SVG";
 const SectionSeven = () => {
   return (
-    <div className=" lg:min-h-[40vh] lg:max-h-[50vh] min-h-[100vh] w-full flex items-center justify-center section7bg overflow-hidden">
+    <div className=" lg:min-h-[40vh] lg:max-h-[50vh] min-h-[100vh] w-full flex items-center justify-center section7bg overflow-hidden shadow-inner shadow-xl">
       <div className="lg:grid lg:grid-cols-2 lg:gap-8 flex flex-col items-center justify-center lg:w-[69.5vw] w-[90vw] lg:min-h-[30vh] min-h-[90vh] lg:mt-0">
         <div className="lg:col-span-1 flex flex-col lg:items-start items-center justify-center lg:min-h-full">
           <h1 className="text-white lg:text-start text-center text-[32px] font-semibold">
