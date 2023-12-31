@@ -31,7 +31,7 @@ const FooterSection = () => {
             <h1 className="font-[500]">Contact Us</h1>
             <div className="flex w-full my-2">
               <AiOutlinePhone className="w-[20px] h-[20px] mr-4" />
-              <p className="w-4/5">+61405899496</p>
+              <p className="w-4/5">+611300813316</p>
             </div>
             <div className="flex w-full my-2">
               <AiOutlineMail className="w-[20px] h-[20px] mr-4" />

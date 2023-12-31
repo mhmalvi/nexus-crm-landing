@@ -15,8 +15,8 @@ const Topbar = () => {
         <div className="col-span-9"></div>
         <div className="col-span-3 grid grid-cols-2 gap-2">
           <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto ">
-            <h1 className="text-white px-4">+01765276560</h1>
-            <AiOutlinePhone  />
+            <h1 className="text-white px-4">+611300813316</h1>
+            <AiOutlinePhone />
           </div>
           <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto ">
             <h1 className="text-white px-4">info@quadque.tech</h1>
