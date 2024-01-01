@@ -12,12 +12,12 @@ const SectionSix = () => {
           <Image src={crm_clipart} alt="crm_clipart" className="w-full" />
         </div>
         <div className="col-span-4 flex flex-col lg:items-end items-center justify-center lg:min-h-full">
-          <h6 className="text-[#4D8CFC] text-[32px] lg:w-3/5 w-[90vw] lg:text-right text-center leading-10">
+          <h6 className="text-[#4D8CFC] text-[2vw] lg:w-4/5 w-[90vw] lg:text-right text-center leading-10">
             Already Using
             <span className="text-white text-[36px] font-semibold"> CRM With Near</span> To No
             Results?
           </h6>
-          <p className="text-white lg:w-3/4 text-base lg:text-end text-center my-4">
+          <p className="text-white lg:w-5/6 text-base lg:text-end text-center my-4">
             We will help you solve all your crm challenges. A crm solution can
             grow your company only when you unlock its full potential and use it
             in a proper way. Here are the pain points you might be facing and

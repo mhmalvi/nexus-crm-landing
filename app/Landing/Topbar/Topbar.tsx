@@ -11,14 +11,13 @@ const Topbar = () => {
         background: `url(${TopBarImg.src}) center / cover`,
       }}
     >
-      <div className="w-[100vw] h-[5vh] px-[2.5vw] grid grid-cols-12 gap-4">
-        <div className="col-span-9"></div>
-        <div className="col-span-3 grid grid-cols-2 gap-2">
-          <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto ">
+      <div className="w-[100vw] h-[5vh] px-[2.5vw] flex items-center justify-end">
+        <div className=" grid grid-cols-2 ">
+          <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto text-sm">
             <h1 className="text-white px-4">+611300813316</h1>
             <AiOutlinePhone />
           </div>
-          <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto ">
+          <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto text-sm">
             <h1 className="text-white px-4">info@quadque.tech</h1>
             <AiOutlineMail />
           </div>

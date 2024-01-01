@@ -16,16 +16,16 @@ const SectionNine = () => {
           <Image src={crm_demo} alt="QLogo" />
         </div>
         <div className="col-span-3 flex flex-col lg:items-end items-center justify-center lg:min-h-full">
-          <h6 className="text-[#4D8CFC] text-[32px]  lg:w-4/5 w-[90vw] lg:text-start text-center leading-5 ">
+          <h6 className="text-[#4D8CFC] text-[32px]  lg:w-full w-[90vw] lg:text-start text-center leading-5 ">
             Unlock the Power
           </h6>
-          <h1 className="text-white lg:text-[36px] font-semibold text-[32px] lg:w-4/5 lg:text-start"> Free Demonstration</h1>
+          <h1 className="text-white lg:text-[32px] font-semibold text-[32px] lg:w-full lg:text-start"> Free Demonstration</h1>
 
-          <p className="text-white  lg:w-4/5 text-base lg:text-start text-center my-4">
+          <p className="text-white  lg:w-full text-base lg:text-start text-center my-4">
             To experience the whole platform for free, book a Practical Demo.
           </p>
 
-          <div className="flex justify-center lg:justify-start  lg:w-4/5">
+          <div className="flex justify-center lg:justify-start  lg:w-full">
             <Button variant={1} title="Book a practical demo ➟" />
           </div>
         </div>

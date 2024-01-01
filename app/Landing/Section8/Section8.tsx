@@ -12,7 +12,7 @@ const SectionEight = () => {
         <div className="col-span-4 flex flex-col lg:items-end items-center justify-center lg:min-h-full">
           <h1 className="text-white text-[36px] text-end font-semibold leading-10">Why Us?</h1>
 
-          <p className="text-white lg:w-4/5 w-[90vw] text-base lg:text-end text-center my-4">
+          <p className="text-white lg:w-5/6 w-[90vw] text-base lg:text-end text-center my-4">
             Queleads CRM—with its broad coverage, deep features, and intuitive
             UI—can go head to head against any other big brand name when it
             comes to technology and functionality. Where other CRMs use
