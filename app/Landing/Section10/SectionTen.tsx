@@ -18,14 +18,14 @@ const SectionTen = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
           <div className="flex flex-col justify-center items-center lg:border-[2px] border-b-[2px] border-[#4D8CFC] lg:rounded-xl drop-shadow-md lg:w-3/4 w-full">
             <Image src={Logo} alt="logo" className="w-3/5" />
-            <p className="lg:text-[2rem]">$3.49/month</p>
+            <p className="lg:text-[2rem] text-white">$3.49/month</p>
           </div>
           <div className=" flex flex-col items-center justify-center lg:mb-0 mb-20">
             {competitors.map((items,index) => {
               return(
                 <div key={index} className="lg:w-4/5 w-full flex items-center justify-between border-dashed border-b-[2px] py-2">
                   <Image src={items.image} alt={`${items}`} width={100} height={100}/>
-                  <p>{items.title}</p>
+                  <p className="text-white">{items.title}</p>
                   <p className="text-[#4D8CFC] font-[700]">${items.price}/month</p>
                 </div>
               );

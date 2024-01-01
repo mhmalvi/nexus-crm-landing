@@ -14,7 +14,7 @@ const SectionThree = () => {
           <p className="text-white text-base lg:w-3/5 w-[90vw] lg:text-start my-4">
             Effortlessly Access Managerial Reports and Save Time.
           </p>
-          <p className="lg:w-4/6 text-base lg:text-start">
+          <p className="lg:w-4/6 text-base lg:text-start text-white">
             Get Sales & Revenue Summary, Lead Conversion Rate, Campaigns
             Details, Campaigns Revenue, Lead Quality Ratio, Lead Summary,
             Individual SalesPerson Reports and many more without any effort.

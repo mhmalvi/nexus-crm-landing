@@ -23,7 +23,7 @@ const SectionSix = () => {
             in a proper way. Here are the pain points you might be facing and
             get frustrated.
           </p>
-          <ul className="list-inside text-right ">
+          <ul className="list-inside text-right text-white">
             <li className="my-2 text-base ">
               Difficulties in managing integrations{" "}
               <span className="text-[#4D8CFC]">▣</span>

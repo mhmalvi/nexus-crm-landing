@@ -15,7 +15,7 @@ import Button from "../Components/Button";
 const FooterSection = () => {
   return (
     <div
-      className="lg:min-h-[60vh] min-h-[100vh] lg:w-full flex items-center lg:justify-center justify-around"
+      className="text-white lg:min-h-[60vh] min-h-[100vh] lg:w-full flex items-center lg:justify-center justify-around"
       style={{
         background: `url(${FooterBg.src}) center / cover`,
       }}
