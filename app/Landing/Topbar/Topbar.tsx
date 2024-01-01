@@ -15,11 +15,11 @@ const Topbar = () => {
         <div className=" grid grid-cols-2 ">
           <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto text-sm">
             <h1 className="text-white px-4">+611300813316</h1>
-            <AiOutlinePhone />
+            <AiOutlinePhone className="text-white"/>
           </div>
           <div className="flex w-full justify-end items-center text-right leading-[10px] my-auto text-sm">
             <h1 className="text-white px-4">info@quadque.tech</h1>
-            <AiOutlineMail />
+            <AiOutlineMail className="text-white"/>
           </div>
         </div>
       </div>
