@@ -4,7 +4,7 @@ import Logo from "../../../public/png/Q-icon.png";
 import { competitors } from "./TenData";
 const SectionTen = () => {
   return (
-    <div className="lg:min-h-[92vh] min-h-[90vh] w-full flex items-center justify-center lg:mb-8">
+    <div className="lg:min-h-[92vh] min-h-[90vh] w-full flex items-center justify-center lg:mb-8 lg:mt-0 mt-16">
       <div className="flex flex-col justify-center lg:w-[69.5vw] w-[90vw] lg:min-h-[92vh] min-h-[90vh]">
         <h6 className="text-[#4D8CFC] lg:text-[32px] lg:text-start text-center m-0">
           The best deal is here to
