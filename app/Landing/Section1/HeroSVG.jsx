@@ -22,8 +22,8 @@ const HeroSVG = (props) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 658 666"
-      width={resNav ? 300:658}
-      height={resNav? 300: 666}
+      width={resNav ? 330:658}
+      height={resNav? 330: 666}
       fill="none"
       {...props}
     >

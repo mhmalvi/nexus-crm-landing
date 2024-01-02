@@ -4,10 +4,10 @@ import HeroSVG from "./HeroSVG";
 import Button from "../Components/Button";
 const SectionOne = () => {
   return (
-    <div className="lg:min-h-[87vh] min-h-full w-full flex items-center justify-center shadow-xl lg:mt-0 mt-[24px] lg:mb-0 mb-[64px]">
-      <div className="lg:grid lg:grid-cols-2 flex flex-col flex-col-reverse lg:w-[69.5vw] w-[90vw] min-h-full">
+    <div className="lg:min-h-full min-h-[94vh] w-full flex items-center justify-center shadow-xl lg:mb-0 mb-4">
+      <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse justify-around lg:w-[69.5vw] w-[90vw] min-h-[87vh] ">
         <div className="min-h-full flex flex-col lg:items-start items-center justify-center ">
-          <div className="flex flex-col lg:mb-8 mb-0">
+          <div className="flex flex-col lg:mb-8 mb-0 min-h-full">
             <h1 className="lg:text-[4vw] text-[40px] font-bold text-white lg:text-start lg:leading-[4vw] ">
               Easiest Way to
             </h1>
@@ -35,7 +35,7 @@ const SectionOne = () => {
             </form>
           </div>
         </div>
-        <div className="lg:min-h-full flex lg:items-center items-start justify-center min-h-1/2 lg:mb-0">
+        <div className="lg:min-h-full flex lg:items-center items-start justify-center min-h-full lg:mb-0">
           <HeroSVG />
         </div>
       </div>
