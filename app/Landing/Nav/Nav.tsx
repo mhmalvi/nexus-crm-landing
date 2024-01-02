@@ -31,7 +31,7 @@ const Nav = () => {
       >
         <div
           className={`ease-in duration-200 crm-menu-desktop w-[100vw] h-[8vh] grid grid-cols-8 gap-4 px-[2.5vw] ${
-            isMenuFixed ? "crm-fixed w-[100vw]" : ""
+            isMenuFixed ? "crm-fixed w-[100vw] " : ""
           }`}
         >
           <div className="col-span-1  w-full flex items-center">

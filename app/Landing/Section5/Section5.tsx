@@ -5,15 +5,17 @@ import Button from "../Components/Button";
 import Image from "next/image";
 const SectionFive = () => {
   return (
-    <div className="lg:min-h-[40vh] min-h-[80vh] w-full flex items-center justify-center">
-      <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col justify-center items-center lg:w-[69.5vw] w-[90vw] lg:min-h-[40vh] min-h-[80vh] lg:mt-0">
-        <div className="col-span-4 flex flex-col lg:items-start items-center justify-center lg:min-h-full">
-          <h6 className="text-[#4D8CFC] text-[32px] lg:w-4/5 w-[90vw] lg:text-start text-center leading-10">
-            Never <span className="text-white text-[36px] font-semibold">Used CRM</span> & Not
-            Sure About The Potential?
+    <div className="lg:min-h-[40vh] min-h-full w-full flex items-center justify-center lg:my-0 my-[64px]">
+      <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col-reverse justify-center items-center lg:w-[69.5vw] w-[90vw] lg:min-h-[40vh] min-h-full lg:mt-0">
+        <div className="col-span-4 flex flex-col items-start justify-center lg:min-h-full">
+          <h6 className="text-[#4D8CFC] lg:text-[32px] text-xl lg:w-4/5 w-[90vw] text-start lg:leading-10">
+            Never Used CRM & Not Sure{" "}
+            <span className="text-white lg:text-[36px] text-xl font-semibold">
+              About The Potential?
+            </span>
           </h6>
 
-          <p className="text-white lg:w-4/5 lg:text-base lg:text-start text-center my-4">
+          <p className="text-white lg:w-4/5 lg:text-base text-start my-4">
             The major working and potential of a CRM solution is to maintain a
             better customer interaction, track and monitor their activities in
             order to boost revenues.

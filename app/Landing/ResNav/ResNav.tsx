@@ -39,7 +39,7 @@ const ResNav = () => {
           isMenuFixed && !Draweropen ? "crm-fixed" : ""
         }`}
       >
-        <nav className="ease-in duration-200 flex justify-between items-center px-[10px] py-[1px]">
+        <nav className="ease-in duration-200 flex justify-between items-center px-[10px] py-[1px] ">
           <div className="w-[50%]">
             <a className="" href="/">
               <Image

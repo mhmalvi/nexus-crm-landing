@@ -6,7 +6,7 @@ const SectionOne = () => {
   return (
     <div className="lg:min-h-[87vh] min-h-full w-full flex items-center justify-center shadow-xl lg:mt-0 mt-[24px]">
       <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse justify-around lg:w-[69.5vw] w-[90vw] min-h-[90vh] ">
-        <div className="min-h-full flex flex-col lg:items-start items-center justify-center ">
+        <div className="min-h-full flex flex-col lg:items-start items-center justify-center lg:mb-0 mb-2">
           <div className="flex flex-col lg:mb-8 mb-0 min-h-[20vh]">
             <h1 className="lg:text-[4vw] text-[40px] font-bold text-white lg:text-start lg:leading-[4vw] ">
               Easiest Way to
