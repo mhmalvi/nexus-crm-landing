@@ -62,14 +62,14 @@ const FooterSection = () => {
             </h1>
           </div>
           <div className=" flex flex-col justify-between h-[20vh]">
-            <form className="flex flex-row justify-between items-center bg-white p-2 rounded-xl">
+            {/* <form className="flex flex-row justify-between items-center bg-white p-2 rounded-xl">
               <input
                 type="email"
                 className="lg:w-5/6 h-[5vh] pl-[14px] lg:rounded-r-[12px] rounded-[12px] focus:outline-none text-black"
                 placeholder="Join our newsletter."
               />
               <Button title="➟" variant={1} type="submit" />
-            </form>
+            </form> */}
             <div className="flex flex-col lg:items-end items-center text-center w-full my-2 ">
               <h1 className="text-xs font-light	">To know more about us</h1>
               <div className="flex lg:justify-between items-center justify-around lg:w-2/5 lg:h-[5vh] w-full">
