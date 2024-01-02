@@ -3,4 +3,6 @@
   position: fixed !important;
   z-index: 100000 !important;
   background-color: white;
+  
+/* background: linear-gradient(to bottom, #180432, #460a94, #180432); */
 }
