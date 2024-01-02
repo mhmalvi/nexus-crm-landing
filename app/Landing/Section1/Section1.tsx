@@ -7,11 +7,11 @@ const SectionOne = () => {
     <div className="lg:min-h-[87vh] min-h-full w-full flex items-center justify-center shadow-xl lg:mt-0 mt-[24px] lg:mb-0 mb-[64px]">
       <div className="lg:grid lg:grid-cols-2 flex flex-col flex-col-reverse lg:w-[69.5vw] w-[90vw] min-h-full">
         <div className="min-h-full flex flex-col lg:items-start items-center justify-center ">
-          <div className="flex flex-col mb-8">
-            <h1 className="lg:text-[4vw] text-[40px] font-bold text-white lg:text-start lg:leading-[4vw] ">
+          <div className="flex flex-col lg:mb-8 mb-0">
+            <h1 className="lg:text-[4vw] shadow-xl text-[40px] font-bold text-white lg:text-start lg:leading-[4vw] ">
               Easiest Way to
             </h1>
-            <h1 className="lg:text-[2.5vw] text-[24px] text-[#4D8CFC] lg:text-start lg:leading-[4vw] leading-[4vw]">
+            <h1 className="lg:text-[2.5vw] shadow-xl text-[24px] text-[#4D8CFC] lg:text-start lg:leading-[4vw] leading-[4vw]">
               Skyrocketing Conversions
             </h1>
             <p className="text-white font-light lg:w-4/5 w-[90vw] lg:text-[1vw] lg:text-start text-[16px] lg:pt-0 pt-4">
