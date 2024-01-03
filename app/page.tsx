@@ -17,7 +17,8 @@ import SectionEight from "./Landing/Section8/Section8";
 import SectionNine from "./Landing/Section9/Section9";
 import SectionTen from "./Landing/Section10/SectionTen";
 import Image from "next/image";
-import qqCrmLogo from "../public/png/Queleads_Logo.png";
+import { LoadingOutlined } from "@ant-design/icons";
+import { Spin } from "antd";
 
 const Home = () => {
   const [resNav, setResNav] = useState(false);
@@ -26,8 +27,7 @@ const Home = () => {
     if (window.innerWidth < 1000) {
       setResNav(true);
       setShowPage(true);
-    }
-    else if (window.innerWidth > 1000) {
+    } else if (window.innerWidth > 1000) {
       setShowPage(true);
     }
     window.addEventListener("resize", () => {
@@ -67,7 +67,10 @@ const Home = () => {
           <FooterSection />
         </div>
       ) : (
-        <div className="ease-in duration-200 flex flex-col items-center justify-center">
+        <div className="h-screen w-screen ease-in duration-200 flex flex-col items-center justify-center">
+          <Spin size="large" style={{
+            color:"00dbde"
+          }}/>
         </div>
       )}
     </>
