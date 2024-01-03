@@ -37,7 +37,7 @@ const FooterSection = () => {
             </div>
             <div className="flex lg:justify-start justify-center lg:w-full my-2">
               <AiOutlineEnvironment className="w-[20px] h-[20px] lg:mr-4 mr-2" />
-              <p className="lg:w-4/5 lg:text-start text-center">
+              <p className="lg:w-4/5 lg:text-start text-center w-full">
                 Level 1, 7 Greenfield Parade Bankstown, NSW 2200, Australia.
               </p>
             </div>
@@ -61,10 +61,10 @@ const FooterSection = () => {
           </div>
           <div className=" flex flex-col justify-between lg:h-[20vh] lg:w-full w-[90vw] overflow-hidden">
             <h1 className="text-xl text-[#4D8CFC] mb-2">Newsletter</h1>
-            <form className="flex flex-row justify-between items-center bg-white p-2 rounded-xl lg:mb-0 mb-8">
+            <form className="flex flex-row justify-between items-center bg-white p-2 rounded-xl lg:mb-0 mb-8 w-full">
               <input
                 type="email"
-                className="lg:w-5/6 h-[5vh] pl-[14px] lg:rounded-r-[12px] rounded-[12px] focus:outline-none text-black"
+                className="lg:w-full h-[5vh] pl-[14px] rounded-[12px] focus:outline-none text-black"
                 placeholder="Join our newsletter."
               />
               <Button title="➟" variant={1} type="submit" />
