@@ -16,46 +16,63 @@ import SectionSeven from "./Landing/Section7/Section7";
 import SectionEight from "./Landing/Section8/Section8";
 import SectionNine from "./Landing/Section9/Section9";
 import SectionTen from "./Landing/Section10/SectionTen";
+import Image from "next/image";
+import qqCrmLogo from "../public/png/Queleads_Logo.png";
 
 const Home = () => {
   const [resNav, setResNav] = useState(false);
+  const [showPage, setShowPage] = useState(false);
   useEffect(() => {
     if (window.innerWidth < 1000) {
       setResNav(true);
+      setShowPage(true);
     }
     window.addEventListener("resize", () => {
       if (window.innerWidth < 1000) {
         setResNav(true);
+        setShowPage(true);
       } else if (window.innerWidth >= 1000) {
         setResNav(false);
+        setShowPage(true);
       }
     });
   }, []);
 
   return (
     <>
-      <div className="bgImage">
-        {resNav ? (
-          <ResNav />
-        ) : (
-          <>
-            <Topbar />
-            <Nav />
-          </>
-        )}
+      {showPage ? (
+        <div className="bgImage">
+          {resNav ? (
+            <ResNav />
+          ) : (
+            <>
+              <Topbar />
+              <Nav />
+            </>
+          )}
 
-        <SectionOne />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <SectionFive />
-        <SectionSix />
-        <SectionSeven />
-        <SectionEight />
-        <SectionNine />
-        <SectionTen />
-        <FooterSection />
-      </div>
+          <SectionOne />
+          <SectionTwo />
+          <SectionThree />
+          <SectionFour />
+          <SectionFive />
+          <SectionSix />
+          <SectionSeven />
+          <SectionEight />
+          <SectionNine />
+          <SectionTen />
+          <FooterSection />
+        </div>
+      ) : (
+        <div className="ease-in duration-200 max-w-screen min-h-screen flex flex-col items-center justify-center">
+              <Image
+                className="w-full"
+                alt="Openthread"
+                src={qqCrmLogo || ""}
+              />
+          <h1>Welcome to Queleads CRM.</h1>
+        </div>
+      )}
     </>
   );
 };

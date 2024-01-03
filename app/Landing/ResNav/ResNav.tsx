@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./nav.css";
 import { Drawer } from "antd";
-import { CloseOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Button from "../Components/Button";
 const qqCrmLogo = require("../../../public/png/Queleads_Logo.png");
@@ -35,7 +35,7 @@ const ResNav = () => {
   return (
     <>
       <div
-        className={`ease-in duration-200 w-full bg-white relative shadow-[0px_0px_25px_-10px_rgba(0,0,0,0.8)] ${
+        className={`ease-in duration-200 w-full bg-white relative shadow-[0px_0px_25px_-10px_rgba(0,0,0,0.8)] lg:hidden block ${
           isMenuFixed && !Draweropen ? "crm-fixed" : ""
         }`}
       >
@@ -71,23 +71,26 @@ const ResNav = () => {
           header: {
             display: "none",
           },
+          body: {
+            backgroundColor: "#1F0145",
+          },
         }}
       >
-        <div>
+        <div className="h-full w-full flex flex-col justify-between">
           <div className="flex justify-between items-center p-2">
-            <div className="w-[50%]">
+            <div className="w-full">
               <Image
                 className="w-full h-full"
                 src={qqCrmLogo}
                 alt="QueledsLogo"
               />
             </div>
-            <div className="text-black">
-              <CloseOutlined onClick={onClose} />
+            <div className="text-white">
+              <ArrowRightOutlined size={5} onClick={onClose} />
             </div>
           </div>
-          <div>
-            <ul className="my-10">
+          {/* <div> */}
+          {/* <ul className="my-10">
               <li>
                 <a className="w-full mt-10" href="/" target="_blank">
                   <button className="flex items-center justify-center text-[16px] font-[700] cursor-pointer w-full px-[20px] py-[10px] rounded-[12px] !bg-[#4D8CFC]">
@@ -102,41 +105,41 @@ const ResNav = () => {
                   </button>
                 </a>
               </li>
-            </ul>
-            <ul className="text-black flex flex-col items-center justify-around min-h-[25vh] ">
-              <li className="text-[#4D8CFC] text-[24px] border-b-[2px] w-full text-center cursor-pointer">
-                Pricing
-              </li>
-
-              <li className="text-[#4D8CFC] text-[24px] border-b-[2px] w-full text-center cursor-pointer">
-                Contact Us
-              </li>
-
-              <li className="text-[#4D8CFC] text-[24px] border-b-[2px] w-full text-center cursor-pointer">
-                Resources
-              </li>
-
-              <li className="text-[#4D8CFC] text-[24px] border-b-[2px] w-full text-center cursor-pointer">
-                Book a Demo
-              </li>
-            </ul>
-          </div>
+            </ul> */}
+          <ul className="text-black flex flex-col items-center justify-around min-h-[25vh] ">
+            <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+              Pricing
+            </li>
+            <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+              Resources
+            </li>
+            <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+              Contact Us
+            </li>
+            <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+              About Us
+            </li>
+            <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+              Book a Demo
+            </li>
+          </ul>
+          {/* </div> */}
           <div className="flex flex-col gap-2 justify-center items-center mt-10">
-            <a className="w-full" href="/">
+            {/* <a className="w-full" href="/">
               <button className="w-full text-[16px] !bg-[#4D8CFC] px-[20px] py-[10px] rounded-[12px] font-[700]">
                 Free forever
               </button>
-            </a>
+            </a> */}
             <a
-              className="w-full"
-              href="https://app.queleadscrm.com/register"
+              className="w-full flex flex-col"
+              href="https://app.queleadscrm.com/requisition"
               target={"_blank"}
               rel={"noreferrer"}
             >
-              <Button title={"Register"} width={"full"} />
+              <Button title={"Requisition"} width={"full"} />
             </a>
             <a
-              className="w-full"
+              className="w-full flex flex-col"
               href="https://app.queleadscrm.com/login"
               target={"_blank"}
               rel={"noreferrer"}
