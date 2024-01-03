@@ -20,7 +20,7 @@ const FooterSection = () => {
         background: `url(${FooterBg.src}) center / cover`,
       }}
     >
-      <div className=" flex flex-col justify-center lg:items-start items-center lg:w-[69.5vw] w-[90vw] lg:min-h-[60vh] min-h-[87vh] lg:mt-0 ">
+      <div className=" flex flex-col justify-center lg:items-start items-center lg:w-[69.5vw] w-[90vw] lg:min-h-[60vh] min-h-[87vh] lg:mt-0 mt-8">
         <Image src={footerLogo} alt="footer_logo" className="mb-16" />
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 lg:mb-8">
           <div className=" flex flex-col lg:items-start items-center">
@@ -61,10 +61,10 @@ const FooterSection = () => {
           </div>
           <div className=" flex flex-col justify-between lg:h-[20vh] lg:w-full w-[90vw] overflow-hidden">
             <h1 className="text-xl text-[#4D8CFC] mb-2">Newsletter</h1>
-            <form className="flex flex-row justify-between items-center bg-white p-2 rounded-xl lg:mb-0 mb-8 w-full">
+            <form className="flex flex-row justify-between items-center bg-[transparent] p-1 border-[1px] rounded-xl lg:mb-0 mb-8 w-full">
               <input
                 type="email"
-                className="lg:w-full h-[5vh] pl-[14px] rounded-[12px] focus:outline-none text-black"
+                className="lg:w-full h-[5vh] rounded-[12px] focus:outline-none bg-[transparent] text-black text-white"
                 placeholder="Join our newsletter."
               />
               <Button title="➟" variant={1} type="submit" />

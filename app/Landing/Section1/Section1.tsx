@@ -27,7 +27,7 @@ const SectionOne = () => {
                 </label>
                 <input
                   type="email"
-                  className="lg:w-1/2 h-[5vh] pl-[14px] w-[90vw] lg:rounded-r-[12px] rounded-[12px]"
+                  className="lg:w-1/2 h-[5vh] pl-[14px] w-[90vw] lg:rounded-r-[12px] rounded-[12px] border-[1px] bg-transparent focus:outline-none active:none text-white"
                   placeholder="Enter your email address"
                 />
               </div>
