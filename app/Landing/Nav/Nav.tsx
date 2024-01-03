@@ -25,7 +25,7 @@ const Nav = () => {
   return (
     <>
       <div
-        className={`ease-in duration-200 w-full flex items-center justify-center lg:block hidden`}
+        className={`ease-in duration-200 w-full flex items-center justify-center lg:flex hidden`}
       >
         <div
           className={`ease-in duration-200 crm-menu-desktop w-[100vw] h-[8vh] grid grid-cols-8 gap-4 px-[2.5vw] ${

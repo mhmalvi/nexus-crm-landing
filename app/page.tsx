@@ -27,10 +27,13 @@ const Home = () => {
       setResNav(true);
       setShowPage(true);
     }
+    else if (window.innerWidth > 1000) {
+      setShowPage(true);
+    }
     window.addEventListener("resize", () => {
       if (window.innerWidth < 1000) {
         setResNav(true);
-        setShowPage(true);
+        // setShowPage(true);
       } else if (window.innerWidth >= 1000) {
         setResNav(false);
         setShowPage(true);
@@ -41,7 +44,7 @@ const Home = () => {
   return (
     <>
       {showPage ? (
-        <div className="bgImage">
+        <div className="bgImage ease-in duration-200">
           {resNav ? (
             <ResNav />
           ) : (
@@ -64,13 +67,7 @@ const Home = () => {
           <FooterSection />
         </div>
       ) : (
-        <div className="ease-in duration-200 max-w-screen min-h-screen flex flex-col items-center justify-center">
-              <Image
-                className="w-full"
-                alt="Openthread"
-                src={qqCrmLogo || ""}
-              />
-          <h1>Welcome to Queleads CRM.</h1>
+        <div className="ease-in duration-200 flex flex-col items-center justify-center">
         </div>
       )}
     </>
