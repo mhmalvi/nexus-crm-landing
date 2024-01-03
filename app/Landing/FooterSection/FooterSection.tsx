@@ -28,16 +28,16 @@ const FooterSection = () => {
               Contact Us
             </h1>
             <div className="flex lg:justify-start justify-center lg:w-full my-2">
-              <AiOutlinePhone className="w-[20px] h-[20px] lg:mr-4 mr-2" />
-              <p className="lg:w-4/5">+611300813316</p>
+              <AiOutlinePhone className="scale-x-[-1] w-[20px] h-[20px] lg:mr-4 mr-2" />
+              <p className="lg:w-4/5 text-base">+611300813316</p>
             </div>
             <div className="flex lg:justify-start justify-center lg:w-full my-2">
               <AiOutlineMail className="w-[20px] h-[20px] lg:mr-4 mr-2" />
-              <p className="lg:w-4/5">hello@quadque.tech</p>
+              <p className="lg:w-4/5 text-base">hello@quadque.tech</p>
             </div>
             <div className="flex lg:justify-start justify-center lg:w-full my-2">
               <AiOutlineEnvironment className="w-[20px] h-[20px] lg:mr-4 mr-2" />
-              <p className="lg:w-4/5 lg:text-start text-center w-full">
+              <p className="lg:w-4/5 lg:text-start text-center w-4/5 text-sm">
                 Level 1, 7 Greenfield Parade Bankstown, NSW 2200, Australia.
               </p>
             </div>
