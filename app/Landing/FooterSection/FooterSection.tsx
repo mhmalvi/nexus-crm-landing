@@ -43,19 +43,19 @@ const FooterSection = () => {
             </div>
           </div>
           <div className="lg:flex flex-col justify-between items-center ">
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
+            <h1 className="lg:w-3/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
               Terms & Conditions
             </h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
+            <h1 className="lg:w-3/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
               GDPR Policy
             </h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
+            <h1 className="lg:w-3/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
               Privacy Policy
             </h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
+            <h1 className="lg:w-3/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
               Refund Policy
             </h1>
-            <h1 className="lg:w-2/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
+            <h1 className="lg:w-3/5 lg:text-start text-center cursor-pointer h-8 flex justify-center items-center">
               About Us
             </h1>
           </div>
