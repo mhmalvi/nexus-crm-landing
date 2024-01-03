@@ -59,7 +59,7 @@ const FooterSection = () => {
               About Us
             </h1>
           </div>
-          <div className=" flex flex-col justify-between lg:h-[20vh]">
+          <div className=" flex flex-col justify-between lg:h-[20vh] lg:w-full w-[90vw] overflow-hidden">
             <h1 className="text-xl text-[#4D8CFC] mb-2">Newsletter</h1>
             <form className="flex flex-row justify-between items-center bg-white p-2 rounded-xl lg:mb-0 mb-8">
               <input
