@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import "./nav.css";
 import Button from "../Components/Button";
 import Image from "next/image";
-import Link from "next/link";
-
 const qqCrmLogo = require("../../../public/png/Queleads_Logo.png");
 
 const Nav = () => {
@@ -79,11 +77,11 @@ const Nav = () => {
           <div className="col-span-1"></div>
           <div className="col-span-1 flex items-center justify-between">
             <a
-              href="https://app.queleadscrm.com/register"
+              href="https://app.queleadscrm.com/requisition"
               target={"_blank"}
               rel={"noreferrer"}
             >
-              <Button title={"Register"} />
+              <Button title={"Requisition"} />
             </a>
             <a
               href="https://app.queleadscrm.com/login"

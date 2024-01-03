@@ -16,9 +16,9 @@ const FooterSection = () => {
   return (
     <div
       className="text-white lg:min-h-[60vh] min-h-[100vh] lg:w-full flex items-center lg:justify-center justify-around"
-      // style={{
-      //   background: `url(${FooterBg.src}) center / cover`,
-      // }}
+      style={{
+        background: `url(${FooterBg.src}) center / cover`,
+      }}
     >
       <div className=" flex flex-col justify-center lg:items-start items-center lg:w-[69.5vw] w-[90vw] lg:min-h-[60vh] min-h-[87vh] lg:mt-0 ">
         <Image src={footerLogo} alt="footer_logo" className="mb-16" />
