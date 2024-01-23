@@ -28,10 +28,11 @@ const Nav = () => {
         className={`ease-in duration-200 w-full flex items-center justify-center lg:flex hidden`}
       >
         <div
-          className={`ease-in duration-200 crm-menu-desktop w-[100vw] h-[8vh] grid grid-cols-8 gap-4 px-[2.5vw] ${
+          className={` ease-in duration-200 crm-menu-desktop w-[100vw] h-[8vh] grid grid-cols-8 items-center px-[12vw] ${
             isMenuFixed ? "crm-fixed w-[100vw] " : ""
           }`}
         >
+          {/* LOGO */}
           <div className="col-span-1  w-full flex items-center">
             <a href="/">
               <Image
@@ -41,11 +42,8 @@ const Nav = () => {
               />
             </a>
           </div>
-
-          <div className="col-span-2  w-full flex items-center justify-evenly">
-            <Button title={"⚪ Live Product Demo"} variant={1} />
-            <Button title={"Free Forever"} variant={1} />
-          </div>
+          <div className="col-span-1"></div>
+          {/* MENU */}
           <div className="col-span-3">
             <ul
               className={`grid grid-cols-4 h-full ${
@@ -59,35 +57,22 @@ const Nav = () => {
               </li>
               <li className="flex items-center justify-end cursor-pointer ">
                 <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
+                  Support
+                </p>
+              </li>
+              <li className="flex items-center justify-end cursor-pointer ">
+                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
                   Contact Us
-                </p>
-              </li>
-              <li className="flex items-center justify-end cursor-pointer ">
-                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
-                  Resources
-                </p>
-              </li>
-              <li className="flex items-center justify-end cursor-pointer ">
-                <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
-                  Book a Demo
                 </p>
               </li>
             </ul>
           </div>
+          {/* LIVE DEMO */}
           <div className="col-span-1"></div>
-          <div className="col-span-1 flex items-center justify-between">
-            <a
-              href="https://app.queleadscrm.com/requisition"
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              <Button title={"Requisition"} />
-            </a>
-            <a
-              href="https://app.queleadscrm.com/login"
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
+          {/* LOGIN */}
+          <div className="col-span-2 flex items-center justify-between">
+            <Button title={"⚪ Live Product Demo"} variant={1} />
+            <a href="https://app.queleadscrm.com/login" rel={"noreferrer"}>
               <Button title={"Login"} />
             </a>
           </div>
