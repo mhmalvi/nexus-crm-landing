@@ -2,7 +2,7 @@ import React from "react";
 import "./section1.css";
 import HeroSVG from "./HeroSVG";
 import Button from "../Components/Button";
-import HeroBG from "/public/bgImage/HeroBG.svg";
+import HeroBG from "/public/bgImage/HeroBG.png";
 const SectionOne = () => {
   return (
     <div

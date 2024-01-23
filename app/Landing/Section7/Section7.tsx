@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Advantages_SVG from "./Advantages_SVG";
-import Background from "/public/bgImage/HeroBG.svg";
+import Background from "/public/bgImage/HeroBG.png";
 const SectionSeven = () => {
   return (
     <div className=" lg:min-h-[40vh] min-h-full w-full flex items-center justify-center section7bg overflow-hidden shadow-md" 

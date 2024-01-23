@@ -12,7 +12,7 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai";
 import Button from "../Components/Button";
-import Background from "/public/bgImage/HeroBG.svg";
+import Background from "/public/bgImage/HeroBG.png";
 const FooterSection = () => {
   return (
     <div
