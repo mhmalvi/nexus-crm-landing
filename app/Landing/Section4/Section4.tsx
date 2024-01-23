@@ -43,7 +43,7 @@ const SectionFour = () => {
   settings.slidesToShow = slidesToShow;
   return (
     <div className="lg:min-h-[30vh] min-h-[10vh] w-full flex flex-col lg:items-center items-start lg:justify-center justify-start">
-      <h1 className="lg:px-0 px-[2.5vh] lg:text-[36px] text-xl lg:w-[69.5vw] text-white font-semibold py-4">
+      <h1 className="lg:px-0 px-[2.5vh] lg:text-[36px] text-xl w-full lg:px-[12vw] px-[4vw] text-blue-800 font-semibold py-4">
         Our Clients
       </h1>
       <div className="flex flex-col flex-col w-full lg:min-h-[10vh] min-h-[10vh] bg-white opacity-80">

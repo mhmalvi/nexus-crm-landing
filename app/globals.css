@@ -18,23 +18,20 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 .bgImage {
   /* background: rgb(24, 4, 50); */
   background: linear-gradient(
-    32deg,
-    rgba(24, 4, 50, 1) 0%,
-    rgba(60, 5, 131, 1) 50%,
-    rgba(24, 4, 50, 1) 100%
+    0deg,
+    rgba(194, 232, 253, 1) 0%,
+    rgba(247, 237, 255, 1) 25%,
+    rgba(194, 232, 253, 1) 50%,
+    rgba(247, 237, 255, 1) 75%,
+    rgba(194, 232, 253, 1) 100%
   );
-  background-size: 400% 400%;
-  animation: bgAnim 10s linear infinite;
+  background-size: 100% 100%;
+  /* animation: bgAnim 10s linear infinite; */
   transform-origin: center;
 }
 @keyframes bgAnim {

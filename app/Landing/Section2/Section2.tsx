@@ -31,12 +31,12 @@ const SectionTwo = () => {
 
   return (
     <div className="lg:min-h-[100vh] min-h-full w-full flex items-center justify-center lg:mb-0 my-[64px]">
-      <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col flex-col lg:w-[69.5vw] w-[90vw] lg:min-h-[100vh] min-h-full lg:mt-0">
+      <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col flex-col w-full lg:px-[12vw] px-[4vw] lg:min-h-[100vh] min-h-full lg:mt-0">
         <div className="col-span-5 flex flex-col items-start justify-center lg:min-h-full">
-          <h6 className="text-[#4D8CFC] font-normal lg:text-[2.5vw] text-xl">
+          <h6 className="text-blue-500 font-normal lg:text-[2.5vw] text-xl">
             Single Solution to
           </h6>
-          <h1 className="text-white lg:text-[2.5vw] text-[20px] font-semibold text-start leading-2 m-0">
+          <h1 className="text-blue-800 lg:text-[2.5vw] text-[20px] font-semibold text-start leading-2 m-0">
             Boost Your Sales & Conversion
           </h1>
           <div className="flex flex-wrap justify-center items-center">
@@ -50,8 +50,8 @@ const SectionTwo = () => {
                     key={idx}
                     id="mui-p-17322-T-1"
                     className={`flex ${
-                      activeTab === idx ? "crm-tab-button" : ""
-                    } mb-[16px] lg:min-w-[8.5vw] ease-in duration-200 min-w-[27px] border-0 m-0 outline-0 px-[4px] lg:py-[16px] py-[5px] hidden whitespace-normal items-center justify-center flex-col text-white text-center font-[500] leading-[1.25] lg:text-[1vw] text-[9px]`}
+                      activeTab === idx ? "crm-tab-button text-blue-800" : "text-blue-500"
+                    } mb-[16px] lg:min-w-[8.5vw] ease-in duration-200 min-w-[27px] border-0 m-0 outline-0 px-[4px] lg:py-[16px] py-[5px] hidden items-center justify-center flex-col text-center font-[500] leading-[1.25] lg:text-[1vw] text-[9px]`}
                     type="button"
                     role="tab"
                     tabIndex={activeTab === idx ? 0 : -1}
@@ -78,10 +78,14 @@ const SectionTwo = () => {
         </div>
         <div className="col-span-3 flex flex-col justify-center items-start lg:text-start text-center lg:h-full">
           <h1 className="font-normal lg:mt-0 mt-[16px] text-start flex flex-col">
-            <span className="lg:text-[24px] text-xl text-[#4D8CFC]">{TabData?.title1}</span>{" "}
-            <span className="lg:text-[24px] text-xl text-white">{TabData?.title2}</span>
+            <span className="lg:text-[24px] text-xl text-blue-500">
+              {TabData?.title1}
+            </span>{" "}
+            <span className="lg:text-[24px] text-xl text-blue-800 font-semibold">
+              {TabData?.title2}
+            </span>
           </h1>
-          <h6 className="lg:text-base text-[12px] leading-[20px] text-start text-white lg:text-start my-4">
+          <h6 className="lg:text-base text-[12px] leading-[20px] text-start text-blue-800 lg:text-start my-4">
             {TabData?.desc}
           </h6>
         </div>

@@ -35,7 +35,7 @@ const ResNav = () => {
   return (
     <>
       <div
-        className={`ease-in duration-200 w-full bg-white relative shadow-[0px_0px_25px_-10px_rgba(0,0,0,0.8)] lg:hidden block ${
+        className={`ease-in duration-200 w-full bg-gradient-to-b from-white to-slate-400 relative shadow-[0px_0px_25px_-10px_rgba(0,0,0,0.8)] lg:hidden block ${
           isMenuFixed && !Draweropen ? "crm-fixed" : ""
         }`}
       >

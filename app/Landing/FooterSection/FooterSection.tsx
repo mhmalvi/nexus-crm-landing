@@ -12,15 +12,16 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai";
 import Button from "../Components/Button";
+import Background from "/public/bgImage/HeroBG.svg";
 const FooterSection = () => {
   return (
     <div
       className="text-white lg:min-h-[60vh] min-h-[100vh] lg:w-full flex items-center lg:justify-center justify-around"
       style={{
-        background: `url(${FooterBg.src}) center / cover`,
+        background: `url(${Background.src}) center / cover`
       }}
     >
-      <div className=" flex flex-col justify-center lg:items-start items-center lg:w-[69.5vw] w-[90vw] lg:min-h-[60vh] min-h-[87vh] lg:mt-0 mt-8">
+      <div className=" flex flex-col justify-center lg:items-start items-center w-full lg:px-[12vw] px-[4vw] lg:min-h-[60vh] min-h-[87vh] lg:mt-0 mt-8">
         <Image src={footerLogo} alt="footer_logo" className="mb-16" />
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 lg:mb-8">
           <div className=" flex flex-col lg:items-start items-center">
