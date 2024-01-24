@@ -3,12 +3,15 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-import { Poppins } from 'next/font/google';
+import { Poppins } from "next/font/google";
+import Topbar from "./Components/Sections/Topbar/Topbar";
+import Nav from "./Components/Sections/Nav/Nav";
+import FooterSection from "./Components/Sections/FooterSection/FooterSection";
 
 const poppinsFont = Poppins({
-  weight: ['200','400', '500','700'],
-  subsets: ['latin'],
-  variable: '--font-poppins',
+  weight: ["200", "400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppinsFont.className}>{children}</body>
+      <body className={`${poppinsFont.className}`}>
+        <Topbar />
+        <Nav />
+        {children}
+        <FooterSection />
+      </body>
     </html>
   );
 }
