@@ -137,66 +137,36 @@ const Nav = () => {
           >
             <div className="h-full w-full flex flex-col justify-between">
               <div className="flex justify-between items-center p-2">
-                <div className="w-full">
+                <Link href="/" className="w-full" onClick={onClose}>
                   <Image
                     className="w-full h-full"
                     src={qqCrmLogo}
                     alt="QueledsLogo"
                   />
-                </div>
+                </Link>
                 <div className="text-white">
                   <ArrowRightOutlined size={5} onClick={onClose} />
                 </div>
               </div>
-              {/* <div> */}
-              {/* <ul className="my-10">
-              <li>
-                <a className="w-full mt-10" href="/" target="_blank">
-                  <button className="flex items-center justify-center text-[16px] font-[700] cursor-pointer w-full px-[20px] py-[10px] rounded-[12px] !bg-[#4D8CFC]">
-                    <span
-                      className="bg-white block rounded-[50%] mr-[8px] w-[15px] h-[15px]"
-                      style={{
-                        animation:
-                          "2s ease 0s infinite normal none running pulse",
-                      }}
-                    ></span>
-                    Live Product Demo
-                  </button>
-                </a>
-              </li>
-            </ul> */}
+
               <ul className="text-black flex flex-col items-center justify-around min-h-[25vh] ">
                 <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
                   Pricing
                 </li>
-                <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
-                  Resources
-                </li>
+                <Link
+                  href={"/support"}
+                  onClick={onClose}
+                  className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer"
+                >
+                  Support
+                </Link>
+
                 <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
                   Contact Us
                 </li>
-                <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
-                  About Us
-                </li>
-                <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
-                  Book a Demo
-                </li>
               </ul>
-              {/* </div> */}
+
               <div className="flex flex-col gap-2 justify-center items-center mt-10">
-                {/* <a className="w-full" href="/">
-              <button className="w-full text-[16px] !bg-[#4D8CFC] px-[20px] py-[10px] rounded-[12px] font-[700]">
-                Free forever
-              </button>
-            </a> */}
-                <a
-                  className="w-full flex flex-col"
-                  href="https://app.queleadscrm.com/requisition"
-                  target={"_blank"}
-                  rel={"noreferrer"}
-                >
-                  <Button title={"Requisition"} width={"full"} />
-                </a>
                 <a
                   className="w-full flex flex-col"
                   href="https://app.queleadscrm.com/login"
