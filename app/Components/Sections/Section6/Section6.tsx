@@ -24,21 +24,21 @@ const SectionSix = () => {
             in a proper way. Here are the pain points you might be facing and
             get frustrated.
           </p>
-          <ul className=" flex flex-col text-blue-800 lg:items-end items-start w-full list-inside lg:text-right text-white">
-            <li className="my-2 text-base  flex lg:flex-row flex-row-reverse">
-              <span className="px-2">Difficulties in managing integrations</span> 
+          <ul className=" flex flex-col lg:items-end items-start w-full list-inside lg:text-right text-white">
+            <li className="my-2 text-base flex lg:flex-row flex-row-reverse">
+              <span className="px-2 text-blue-800">Difficulties in managing integrations</span> 
               <span className="text-blue-500">▣</span>
             </li>
             <li className="my-2 text-base flex lg:flex-row flex-row-reverse">
-              <span className="px-2">Less return on investment</span>
+              <span className="px-2 text-blue-800">Less return on investment</span>
               <span className="text-blue-500">▣</span>
             </li>
             <li className="my-2 text-base flex lg:flex-row flex-row-reverse">
-            <span className="px-2">Low customer retention rates</span>
+            <span className="px-2 text-blue-800">Low customer retention rates</span>
               <span className="text-blue-500">▣</span>
             </li>
             <li className="my-2 text-base flex lg:flex-row flex-row-reverse">
-            <span className="px-2">Complicated tracking and reporting</span>
+            <span className="px-2 text-blue-800">Complicated tracking and reporting</span>
               <span className="text-blue-500">▣</span>
             </li>
           </ul>
