@@ -2,9 +2,6 @@
 import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import Nav from "./Landing/Nav/Nav";
-import ResNav from "./Landing/ResNav/ResNav";
-import Topbar from "./Landing/Topbar/Topbar";
 import Image from "next/image";
 import { LoadingOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
