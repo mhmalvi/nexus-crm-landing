@@ -24,11 +24,11 @@ body {
   /* background: rgb(24, 4, 50); */
   background: linear-gradient(
     0deg,
-    rgba(194, 232, 253, 1) 0%,
-    rgba(247, 237, 255, 1) 25%,
-    rgba(194, 232, 253, 1) 50%,
-    rgba(247, 237, 255, 1) 75%,
-    rgba(194, 232, 253, 1) 100%
+    #c2e8fd 0%,
+    #f7edff 25%,
+    #c2e8fd 50%,
+    #f7edff 75%,
+    #c2e8fd 100%
   );
   background-size: 100% 100%;
   /* animation: bgAnim 10s linear infinite; */

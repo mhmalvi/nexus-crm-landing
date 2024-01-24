@@ -22,13 +22,21 @@ const Nav = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // background: linear-gradient(
+  //   0deg,
+  //   #c2e8fd 0%,
+  //   #f7edff 25%,
+  //   #c2e8fd 50%,
+  //   #f7edff 75%,
+  //   #c2e8fd 100%
+  // );
   return (
     <>
       <div
         className={`ease-in duration-200 w-full flex items-center justify-center lg:flex hidden`}
       >
         <div
-          className={`z-19 shadow-md bg-gradient-to-b from-white to-slate-400 ease-in duration-200 crm-menu-desktop w-[100vw] h-[8vh] grid grid-cols-12 items-center px-[12vw] ${
+          className={`z-19 shadow-md bg-gradient-to-b from-[#f7edff] to-[#c2e8fd] ease-in duration-200 crm-menu-desktop w-[100vw] h-[8vh] grid grid-cols-12 items-center px-[12vw] ${
             isMenuFixed ? "crm-fixed w-[100vw] " : ""
           }`}
         >
