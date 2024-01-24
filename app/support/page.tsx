@@ -19,11 +19,6 @@ const Support = () => {
         background: `url(${HeroBG.src}) center / cover`,
       }}
     >
-      <div>
-        <Link href={"/"}>
-          <button>{"<"} Back</button>
-        </Link>
-      </div>
       <div className="w-full my-4 flex justify-between items-center">
         <div>
           <h1 className="text-4xl py-2">Support</h1>
