@@ -64,7 +64,7 @@ const FooterSection = () => {
             <form className="flex justify-between items-center bg-[transparent] p-1 border-[1px] rounded-xl lg:mb-0 mb-8">
               <input
                 type="email"
-                className="h-[5vh] pl-4 rounded-[12px] focus:outline-none bg-[transparent] text-white"
+                className="h-[5vh] pl-4 rounded-[12px] focus:ring-0 w-full border-0 bg-[transparent] text-white "
                 placeholder="Join our newsletter."
               />
               <div className=" h-full">
