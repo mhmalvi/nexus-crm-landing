@@ -13,6 +13,7 @@ import SectionSeven from "./Components/LandingSections/Section7/Section7";
 import SectionEight from "./Components/LandingSections/Section8/Section8";
 import SectionTen from "./Components/LandingSections/Section10/SectionTen";
 import SectionNine from "./Components/LandingSections/Section9/Section9";
+import SectionEleven from "./Components/LandingSections/Section11/SectionEleven";
 
 const Home = () => {
   const [showPage, setShowPage] = useState(false);
@@ -44,6 +45,7 @@ const Home = () => {
           <SectionEight />
           <SectionNine />
           <SectionTen />
+          <SectionEleven />
         </div>
       ) : (
         <div className="h-screen w-screen ease-in duration-200 flex flex-col items-center justify-center">

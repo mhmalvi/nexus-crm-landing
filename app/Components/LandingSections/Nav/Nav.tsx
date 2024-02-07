@@ -71,7 +71,6 @@ const Nav = () => {
           >
             <Image className="" alt="Openthread" src={qqCrmLogo || ""} />
           </Link>
-
           {showButton ? (
             <div className="cursor-pointer" onClick={showDrawer}>
               <div className="h-[2px] w-[30px] bg-[#08A0F7]"></div>
@@ -112,7 +111,7 @@ const Nav = () => {
               
               {/* LOGIN */}
               <div className="flex items-center justify-end">
-                <Button title={"⚪ Live Product Demo"} variant={1} />
+              <Button title="Try for free" variant={1} />
                 <a
                   href="https://app.queleadscrm.com/login"
                   rel={"noreferrer"}

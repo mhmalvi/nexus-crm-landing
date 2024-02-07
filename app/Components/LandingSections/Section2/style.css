@@ -10,5 +10,5 @@
   background-color: #2f4eb5;
   left: 0;
   bottom: 0;
-  transition: all 1s ease-in-out !important;
+  transition: all 0.3s ease-in !important;
 }

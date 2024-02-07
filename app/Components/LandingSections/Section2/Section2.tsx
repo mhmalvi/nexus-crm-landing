@@ -27,7 +27,14 @@ const SectionTwo = () => {
     setTabData(tabDataDetail[0]);
   }, [currentTabId]);
 
-  console.log("tab data list ", tabMenuList, " tab data: ", currentTabId);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const nextTabIdx = (activeTab + 1) % tabMenu.length;
+      handleTab(tabMenu[nextTabIdx]?.id, nextTabIdx);
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [activeTab, tabMenu]);
 
   return (
     <div className="lg:min-h-[100vh] min-h-full w-full flex items-center justify-center lg:mb-0 my-[64px]">
@@ -39,7 +46,7 @@ const SectionTwo = () => {
           <h1 className="text-blue-800 lg:text-[2.5vw] text-[20px] font-semibold text-start leading-2 m-0">
             Boost Your Sales & Conversion
           </h1>
-          <div className="flex flex-wrap justify-center items-center">
+          <div className="ease-in duration-200 flex flex-wrap justify-center items-center">
             {tabMenu &&
               tabMenu?.map((tab, idx) => {
                 return (
@@ -69,23 +76,22 @@ const SectionTwo = () => {
                 );
               })}
           </div>
-
           <Image
             className={"ease-in duration-200 shadow-xl"}
             src={TabData?.image || ""}
             alt={`${TabData?.tid}`}
           />
         </div>
-        <div className="col-span-3 flex flex-col justify-center items-start lg:text-start text-center lg:h-full">
-          <h1 className="font-normal lg:mt-0 mt-[16px] text-start flex flex-col">
+        <div className="ease-in duration-200 col-span-3 flex flex-col justify-center items-start lg:text-start text-center lg:h-full">
+          <h1 className="font-normal lg:mt-0 mt-[16px] text-start flex flex-col ease-in duration-200">
             <span className="lg:text-[24px] text-xl text-blue-500">
               {TabData?.title1}
-            </span>{" "}
-            <span className="lg:text-[24px] text-xl text-blue-800 font-semibold">
+            </span>
+            <span className="lg:text-[24px] text-xl text-blue-800 font-semibold ease-in duration-200">
               {TabData?.title2}
             </span>
           </h1>
-          <h6 className="lg:text-base text-[12px] leading-[20px] text-start text-blue-800 lg:text-start my-4">
+          <h6 className="lg:text-base text-[12px] leading-[20px] text-start text-blue-800 lg:text-start my-4 ease-in duration-200">
             {TabData?.desc}
           </h6>
         </div>
