@@ -4,9 +4,9 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 import { Poppins } from "next/font/google";
-import Topbar from "./Components/Sections/Topbar/Topbar";
-import Nav from "./Components/Sections/Nav/Nav";
-import FooterSection from "./Components/Sections/FooterSection/FooterSection";
+import Topbar from "./Components/LandingSections/Topbar/Topbar";
+import Nav from "./Components/LandingSections/Nav/Nav";
+import FooterSection from "./Components/LandingSections/FooterSection/FooterSection";
 
 const poppinsFont = Poppins({
   weight: ["200", "400", "500", "700"],

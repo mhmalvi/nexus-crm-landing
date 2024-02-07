@@ -23,15 +23,15 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 1366) {
       setShowButton(true);
-    } else if (window.innerWidth > 1000) {
+    } else if (window.innerWidth > 1366) {
       setShowButton(false);
     }
     window.addEventListener("resize", () => {
-      if (window.innerWidth < 1000) {
+      if (window.innerWidth < 1366) {
         setShowButton(true);
-      } else if (window.innerWidth >= 1000) {
+      } else if (window.innerWidth >= 1366) {
         setShowButton(false);
       }
     });
@@ -58,18 +58,18 @@ const Nav = () => {
         className={`ease-in duration-200 w-full flex items-center  justify-center lg:flex`}
       >
         <div
-          className={`z-19 shadow-md bg-gradient-to-b from-[#f7edff] to-[#c2e8fd] crm-menu-desktop ease-in duration-200 w-[100vw] h-[8vh] ${
-            showButton ? "flex justify-between" : "grid"
-          } grid-cols-12 items-center lg:px-[12vw] px-[4vw] ${
+          className={`z-19 shadow-md bg-gradient-to-b from-[#f7edff] to-[#c2e8fd] crm-menu-desktop ease-in duration-200 w-screen h-[8vh] ${
+            showButton ? "flex " : "flex flex-wrap 2xl:gap-8 gap-4"
+          } items-center justify-between lg:px-[12vw] px-[4vw] ${
             isMenuFixed ? `${Draweropen ? "" : "crm-fixed"} w-[100vw] ` : ""
           }`}
         >
           {/* LOGO */}
           <Link
             href="/"
-            className={`col-span-2 lg:w-full w-1/2 flex items-center`}
+            className={`w-52 flex items-center`}
           >
-            <Image className="w-full" alt="Openthread" src={qqCrmLogo || ""} />
+            <Image className="" alt="Openthread" src={qqCrmLogo || ""} />
           </Link>
 
           {showButton ? (
@@ -80,32 +80,38 @@ const Nav = () => {
             </div>
           ) : (
             <>
-              {/* BLANK SPACE */}
-              <div className="col-span-2"></div>
               {/* MENU */}
-              <div className="col-span-4">
-                <ul className={`grid grid-cols-4 h-full text-blue-600 gap-2`}>
+                <ul className={`flex flex-wrap 2xl:gap-8 gap-4 h-full text-blue-600 gap-2`}>
+                  <li className="flex items-center justify-end cursor-pointer ">
+                    <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
+                    About Us</p>
+                  </li>
                   <li className="flex items-center justify-end cursor-pointer ">
                     <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
                       Pricing
                     </p>
                   </li>
-                  <Link href={"/support"}>
                     <li className="flex items-center justify-end cursor-pointer ">
+                  <Link href={"/support"}>
                       <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
                         Support
                       </p>
-                    </li>
                   </Link>
+                    </li>
                   <li className="flex items-center justify-end cursor-pointer ">
                     <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
                       Contact Us
                     </p>
                   </li>
+                  <li className="flex items-center justify-end cursor-pointer ">
+                    <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
+                      Privacy Policy
+                    </p>
+                  </li>
                 </ul>
-              </div>
+              
               {/* LOGIN */}
-              <div className="col-span-4 flex items-center justify-end">
+              <div className="flex items-center justify-end">
                 <Button title={"⚪ Live Product Demo"} variant={1} />
                 <a
                   href="https://app.queleadscrm.com/login"
@@ -151,6 +157,9 @@ const Nav = () => {
 
               <ul className="text-black flex flex-col items-center justify-around min-h-[25vh] ">
                 <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+                  About Us
+                </li>
+                <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
                   Pricing
                 </li>
                 <Link
@@ -160,9 +169,11 @@ const Nav = () => {
                 >
                   Support
                 </Link>
-
                 <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
                   Contact Us
+                </li>
+                <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+                  Privacy Policy
                 </li>
               </ul>
 

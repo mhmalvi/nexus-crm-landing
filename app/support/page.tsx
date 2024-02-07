@@ -8,7 +8,6 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from "flowbite-react";
-import Link from "next/link";
 import "./support.css";
 
 const Support = () => {
