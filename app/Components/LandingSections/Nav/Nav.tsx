@@ -65,10 +65,7 @@ const Nav = () => {
           }`}
         >
           {/* LOGO */}
-          <Link
-            href="/"
-            className={`w-52 flex items-center`}
-          >
+          <Link href="/" className={`w-52 flex items-center`}>
             <Image className="" alt="Openthread" src={qqCrmLogo || ""} />
           </Link>
           {showButton ? (
@@ -80,38 +77,49 @@ const Nav = () => {
           ) : (
             <>
               {/* MENU */}
-                <ul className={`flex flex-wrap 2xl:gap-8 gap-4 h-full text-blue-600 gap-2`}>
-                  <li className="flex items-center justify-end cursor-pointer ">
-                    <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
-                    About Us</p>
-                  </li>
-                  <li className="flex items-center justify-end cursor-pointer ">
-                    <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
-                      Pricing
+              <ul
+                className={`flex flex-wrap 2xl:gap-8 gap-4 h-full text-blue-600 gap-2`}
+              >
+                <li className="flex items-center justify-end cursor-pointer ">
+                  <Link href={"/about-us"}>
+                    <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
+                      About Us
                     </p>
-                  </li>
-                    <li className="flex items-center justify-end cursor-pointer ">
-                  <Link href={"/support"}>
-                      <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
-                        Support
-                      </p>
                   </Link>
-                    </li>
-                  <li className="flex items-center justify-end cursor-pointer ">
+                </li>
+                <li className="flex items-center justify-end cursor-pointer ">
+                  <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
+                    Pricing
+                  </p>
+                </li>
+                <li className="flex items-center justify-end cursor-pointer ">
+                  <Link href={"/support"}>
                     <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
-                      Contact Us
+                      Support
                     </p>
-                  </li>
-                  <li className="flex items-center justify-end cursor-pointer ">
-                    <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
-                      Privacy Policy
-                    </p>
-                  </li>
-                </ul>
-              
+                  </Link>
+                </li>
+                <li className="flex items-center justify-end cursor-pointer ">
+                  <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
+                    Contact Us
+                  </p>
+                </li>
+                <li className="flex items-center justify-end cursor-pointer ">
+                  <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
+                    Privacy Policy
+                  </p>
+                </li>
+              </ul>
+
               {/* LOGIN */}
               <div className="flex items-center justify-end">
-              <Button title="Try for free" variant={1} />
+                <a
+                  href="https://app.queleadscrm.com/register"
+                  rel={"noreferrer"}
+                  className="ml-5"
+                >
+                  <Button title="Try for free" variant={1} />
+                </a>
                 <a
                   href="https://app.queleadscrm.com/login"
                   rel={"noreferrer"}
@@ -155,9 +163,13 @@ const Nav = () => {
               </div>
 
               <ul className="text-black flex flex-col items-center justify-around min-h-[25vh] ">
-                <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+                <Link
+                  href={"/about-us"}
+                  onClick={onClose}
+                  className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer"
+                >
                   About Us
-                </li>
+                </Link>
                 <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
                   Pricing
                 </li>
@@ -177,6 +189,14 @@ const Nav = () => {
               </ul>
 
               <div className="flex flex-col gap-2 justify-center items-center mt-10">
+                <a
+                  className="w-full flex flex-col"
+                  href="https://app.queleadscrm.com/register"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  <Button title={"Try for free"} width={"full"} />
+                </a>
                 <a
                   className="w-full flex flex-col"
                   href="https://app.queleadscrm.com/login"

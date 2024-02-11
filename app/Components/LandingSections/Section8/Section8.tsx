@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import stats from "/public/png/stats.png";
+import Images from "../../images";
 import Image from "next/image";
 const SectionEight = () => {
   return (
     <div className="lg:min-h-[60vh] min-h-full w-full flex items-center justify-center lg:mt-0 mt-[64px]">
       <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col justify-around w-full lg:px-[12vw] px-[4vw] lg:min-h-[60vh] min-h-full lg:mt-0">
         <div className="col-span-4 flex flex-col justify-center lg:min-h-full">
-          <Image src={stats} alt="stats" className="w-full" />
+          <Image src={Images.stats} alt="stats" className="w-full" />
         </div>
         <div className="col-span-4 flex flex-col lg:items-end items-start justify-center lg:min-h-full lg:mt-0 mt-[32px]">
           <h1 className="text-blue-500 lg:text-[36px] text-xl text-end font-semibold lg:leading-10">Why Us?</h1>

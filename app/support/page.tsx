@@ -13,10 +13,10 @@ import "./support.css";
 const Support = () => {
   return (
     <div
-      className="h-screen flex flex-col items-start justify-center lg:px-[12vw] px-[4vw]"
-      style={{
-        background: `url(${HeroBG.src}) center / cover`,
-      }}
+      className="h-screen flex flex-col items-start justify-center lg:px-60 px-4"
+      // style={{
+      //   background: `url(${HeroBG.src}) center / cover`,
+      // }}
     >
       <div className="w-full my-4 flex lg:flex-row flex-col justify-between items-center">
         <div className="flex flex-col justify-center lg:items-start items-center lg:mb-0 mb-4">
@@ -30,14 +30,14 @@ const Support = () => {
       <h1 className="lg:text-2xl mt-8 text-center w-full">
         Frequently Asked Questions (FAQ)
       </h1>
-      <div className="w-full my-4 rounded-xl overflow-hidden shadow-md backdrop-blur-2xl bg-[#ffffff11] flex flex-col justify-center- items-center">
+      <div className="w-full my-4 rounded-md overflow-hidden shadow-md backdrop-blur-2xl bg-[#ffffff11] flex flex-col justify-center- items-center">
         <div className="ease-in duration-100 w-full lg:p-8 p-4">
           <Accordion
             className="border-none accordion-section lg:h-[40vh] h-[35vh] overflow-y-scroll "
             collapseAll
           >
             <AccordionPanel className="ease-in duration-100 ">
-              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-xl shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
+              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-md shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
                 1. What is CRM?
               </AccordionTitle>
               <AccordionContent className="px-3 pb-4 ease-in duration-100 ">
@@ -60,7 +60,7 @@ const Support = () => {
               </AccordionContent>
             </AccordionPanel>
             <AccordionPanel>
-              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-xl shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
+              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-md shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
                 2. Why is CRM important?
               </AccordionTitle>
               <AccordionContent className="px-3 pb-4 ">
@@ -83,7 +83,7 @@ const Support = () => {
               </AccordionContent>
             </AccordionPanel>
             <AccordionPanel>
-              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-xl shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
+              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-md shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
                 3. What is the advantage of Queleads CRM?
               </AccordionTitle>
               <AccordionContent className="px-3 pb-4">
@@ -106,7 +106,7 @@ const Support = () => {
               </AccordionContent>
             </AccordionPanel>
             <AccordionPanel>
-              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-xl shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
+              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-md shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
                 4. What does a CRM software do?
               </AccordionTitle>
               <AccordionContent className="px-3 pb-4">
@@ -129,7 +129,7 @@ const Support = () => {
               </AccordionContent>
             </AccordionPanel>
             <AccordionPanel>
-              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-xl shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
+              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-md shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
                 5. Who is a CRM system for?
               </AccordionTitle>
               <AccordionContent className="px-3 pb-4 ">
@@ -152,7 +152,7 @@ const Support = () => {
               </AccordionContent>
             </AccordionPanel>
             <AccordionPanel>
-              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-xl shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
+              <AccordionTitle className="px-3 py-4 !mb-4 ease-in duration-100 hover:bg-transparent hover:text-white rounded-md shadow-md backdrop-blur-2xl bg-[#ffffff11] focus:ring-0 text-start">
                 6. What is a cloud based CRM system?
               </AccordionTitle>
               <AccordionContent className="px-3 pb-4 ">
@@ -177,7 +177,7 @@ const Support = () => {
           </Accordion>
         </div>
       </div>
-      <div className="w-full px-3 py-8 rounded-xl shadow-md backdrop-blur-2xl bg-[#ffffff11] flex flex-col justify-center items-center lg:mb-0 mb-8">
+      <div className="w-full px-3 py-8 rounded-md shadow-md backdrop-blur-2xl bg-[#ffffff11] flex flex-col justify-center items-center lg:mb-0 mb-8">
         <h1 className="text-xl">Support Tickets</h1>
         <p className="text-sm pb-4 lg:text-start text-center">
           Log in to create new tickets and view current support cases.

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import crm_demo from "/public/png/Demo.svg";
+import Images from "../../images"
 import Button from "../../Button";
 import Image from "next/image";
 
@@ -13,7 +13,7 @@ const SectionNine = () => {
           <h1 className="text-blue-800 lg:text-[36px] text-xl text-start lg:leading-10 font-semibold mb-8">
             Demo Now !
           </h1>
-          <Image src={crm_demo} alt="QLogo"/>
+          <Image src={Images.crm_demo} alt="QLogo"/>
         </div>
         <div className="col-span-3 flex flex-col lg:items-end items-center justify-center lg:min-h-full lg:mt-0 mt-8">
           <h6 className="text-blue-500 lg:text-[32px] text-xl lg:w-full w-[90vw] text-start lg:leading-10 ">

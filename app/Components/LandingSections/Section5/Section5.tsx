@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import pcphoto from "/public/png/pcs.png";
-import Button from "../../Button";
+// import Button from "../../Button";
 import Image from "next/image";
+import Images from "../../images"
 const SectionFive = () => {
   return (
     <div className="lg:min-h-[40vh] min-h-full w-full flex items-center justify-center lg:my-0 my-[64px]">
@@ -22,7 +22,7 @@ const SectionFive = () => {
           </p>
         </div>
         <div className="col-span-4 flex flex-col justify-center lg:min-h-[30vh]">
-          <Image src={pcphoto} alt="pcPhoto" />
+          <Image src={Images.pcphoto} alt="pcPhoto" />
         </div>
       </div>
     </div>

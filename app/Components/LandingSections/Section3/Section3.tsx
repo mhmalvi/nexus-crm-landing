@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import crm_show from "/public/png/crm_show.png";
+import Images from "../../images"
 import Image from "next/image";
 const SectionThree = () => {
   return (
@@ -21,7 +21,7 @@ const SectionThree = () => {
           </p>
         </div>
         <div className="col-span-3 flex flex-col justify-center lg:min-h-full">
-          <Image src={crm_show} alt="crm_show" className="w-full" />
+          <Image src={Images.crm_show} alt="crm_show" className="w-full" />
         </div>
       </div>
     </div>

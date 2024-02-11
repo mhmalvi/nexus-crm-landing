@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Logo from "/public/png/Q-icon.png";
+import Images from "../../images"
 import { competitors } from "./TenData";
 const SectionTen = () => {
   const [imgWidth, setImgWidth] = useState(100);
@@ -33,8 +33,8 @@ const SectionTen = () => {
           Discover Unmatched Value: Compare Our Pricing and Features
         </p>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 ">
-          <div className="flex flex-col justify-center items-center border-[2px] border-violet-500 rounded-xl drop-shadow-md lg:w-3/4 lg:h-full w-full">
-            <Image src={Logo} alt="logo" className="w-3/5" />
+          <div className="flex flex-col justify-center items-center border-[2px] border-violet-500 rounded-md drop-shadow-md lg:w-3/4 lg:h-full w-full">
+            <Image src={Images.Logo} alt="logo" className="w-3/5" />
             <p className="lg:text-[2rem] text-slate-300">$3.49/month</p>
           </div>
           <div className=" flex flex-col items-center justify-center lg:mb-0 mb-16">
