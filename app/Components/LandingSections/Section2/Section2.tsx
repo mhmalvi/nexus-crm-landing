@@ -24,7 +24,13 @@ const SectionTwo = () => {
     const tabDataDetail = data?.filter(
       (item, idx) => item?.tid === currentTabId
     );
-    setTabData(tabDataDetail[0]);
+    setTabData({
+      tid: tabDataDetail[0]?.tid,
+      image: tabDataDetail[0]?.image.toString(),
+      title1: tabDataDetail[0]?.title1,
+      title2: tabDataDetail[0]?.title2,
+      desc: tabDataDetail[0]?.desc,
+    });
   }, [currentTabId]);
 
   useEffect(() => {

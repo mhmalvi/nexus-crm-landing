@@ -5,11 +5,11 @@ export interface tabProp {
   isActive: boolean;
 }
 export interface tabData {
-  tid: number;
-  image: string;
-  title1: string;
-  title2: string;
-  desc: string;
+  tid: number | undefined;
+  image: string | undefined;
+  title1: string | undefined;
+  title2: string | undefined;
+  desc: string | undefined;
 }
 export interface SliderSettingsProps {
     className: string;
