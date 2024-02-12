@@ -131,8 +131,6 @@ const Nav = () => {
             </>
           )}
           <Drawer
-            className=" !z-[100001]"
-            // headerStyle={{ display: "none" }}
             title={null}
             closeIcon={true}
             placement="left"
