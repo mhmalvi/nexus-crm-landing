@@ -1,16 +1,16 @@
+import { StaticImageData } from "next/image";
+
 export interface tabProp {
   id: number;
-  icon: any;
+  icon: StaticImageData;
   name: string;
   isActive: boolean;
+  image: StaticImageData;
+  title1: string ;
+  title2: string ;
+  desc: string ;
 }
-export interface tabData {
-  tid: number | undefined;
-  image: string | undefined;
-  title1: string | undefined;
-  title2: string | undefined;
-  desc: string | undefined;
-}
+
 export interface SliderSettingsProps {
     className: string;
     centerMode: boolean;

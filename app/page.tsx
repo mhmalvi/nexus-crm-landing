@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <>
       {showPage ? (
-        <div className="bgImage ease-in duration-200">
+        <div className="bgImage ease-in duration-200 h-full w-full ">
           <SectionOne />
           <SectionTwo />
           <SectionThree />

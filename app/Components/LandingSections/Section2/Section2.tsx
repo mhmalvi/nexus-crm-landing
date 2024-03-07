@@ -1,106 +1,73 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { TabAllData, tabMenuList } from "./Section2Data";
+import React, { ReactEventHandler, useEffect, useState } from "react";
+import { tabMenuList } from "./Section2Data";
 import "./style.css";
-import { tabData, tabProp } from "../../type";
+import { tabProp } from "../../type";
 import Image from "next/image";
+
 const SectionTwo = () => {
-  const [currentTabId, setCurrentTabId] = useState(1);
-  const [activeTab, setActiveTab] = useState(0);
-  const [tabMenu, setTabmenu] = useState<tabProp[]>([]);
-  const [TabData, setTabData] = useState<tabData>();
-
-  const handleTab = (id: number, idx: number) => {
-    setCurrentTabId(id);
-    setActiveTab(idx);
-  };
-  useEffect(() => {
-    const data = tabMenuList;
-    setTabmenu(data);
-  }, []);
+  const [tabMenu, setTabmenu] = useState<tabProp>();
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const intervalTime = 5000;
 
   useEffect(() => {
-    const data = TabAllData;
-    const tabDataDetail = data?.filter(
-      (item, idx) => item?.tid === currentTabId
-    );
-    setTabData({
-      tid: tabDataDetail[0]?.tid,
-      image: tabDataDetail[0]?.image.toString(),
-      title1: tabDataDetail[0]?.title1,
-      title2: tabDataDetail[0]?.title2,
-      desc: tabDataDetail[0]?.desc,
-    });
-  }, [currentTabId]);
+    const interval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % tabMenuList.length;
+      setTabmenu(tabMenuList[nextIndex]);
+      setCurrentIndex(nextIndex);
+    }, intervalTime);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const nextTabIdx = (activeTab + 1) % tabMenu.length;
-      handleTab(tabMenu[nextTabIdx]?.id, nextTabIdx);
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, [activeTab, tabMenu]);
-
+    return () => clearInterval(interval);
+  }, [currentIndex]);
   return (
-    <div className="lg:min-h-[100vh] min-h-full w-full flex items-center justify-center lg:mb-0 my-[64px]">
-      <div className="lg:grid lg:grid-cols-8 lg:gap-8 flex flex-col flex-col w-full lg:px-[12vw] px-[4vw] lg:min-h-[100vh] min-h-full lg:mt-0">
-        <div className="col-span-5 flex flex-col items-start justify-center lg:min-h-full">
-          <h6 className="text-blue-500 font-normal lg:text-[2.5vw] text-xl">
+    <div className="h-full w-full flex gap-4 items-center justify-between lg:px-60 px-4 py-16">
+      <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-1 items-start justify-center h-full">
+          <h6 className="text-blue-500 font-normal lg:text-5xl text-3xl">
             Single Solution to
           </h6>
-          <h1 className="text-blue-800 lg:text-[2.5vw] text-[20px] font-semibold text-start leading-2 m-0">
+          <h1 className="text-blue-800 lg:text-4xl text-2xl font-semibold text-start m-0 lg:pb-0 pb-4">
             Boost Your Sales & Conversion
           </h1>
-          <div className="ease-in duration-200 flex flex-wrap justify-center items-center">
-            {tabMenu &&
-              tabMenu?.map((tab, idx) => {
-                return (
-                  <button
-                    onClick={() => {
-                      handleTab(tab?.id, idx);
-                    }}
-                    key={idx}
-                    id="mui-p-17322-T-1"
-                    className={`flex ${
-                      activeTab === idx ? "crm-tab-button text-blue-800" : "text-blue-500"
-                    } mb-[16px] lg:min-w-[8.5vw] ease-in duration-200 min-w-[27px] border-0 m-0 outline-0 px-[4px] lg:py-[16px] py-[5px] hidden items-center justify-center flex-col text-center font-[500] leading-[1.25] lg:text-[1vw] text-[9px]`}
-                    type="button"
-                    role="tab"
-                    tabIndex={activeTab === idx ? 0 : -1}
-                    style={{
-                      display: "inline-flex",
-                    }}
-                  >
-                    <Image
-                      className=" block ease-in duration-200 align-middle border-0 max-w-full w-[3.5rem] h-[2.5rem] mb-[0.5rem] mt-[0.7rem] p-0"
-                      src={tab?.icon}
-                      alt="tab"
-                    />
-                    {tab?.name}
-                  </button>
-                );
-              })}
+          <div className="ease-in duration-200 h-full 2xl:gap-4 gap-2 flex flex-wrap items-center justify-between lg:w-7/12 w-full  lg:pb-0 pb-4">
+            {tabMenuList.map((item, idx) => {
+              return (
+                <button
+                  key={idx}
+                  className={`ease-in duration-200 h-full flex flex-col flex-wrap items-center justify-center m-0 p-0 border-b-2 ${
+                    currentIndex === idx ? "border-black" : "border-blue-500"
+                  }`}
+                  onClick={() => {
+                    setTabmenu(item);
+                    setCurrentIndex(idx);
+                  }}
+                >
+                  <Image
+                    src={item.icon || null}
+                    alt="tab"
+                    className="lg:w-20 w-8"
+                  />
+                  <h1 className="m-0 p-0 text-gray-800">{item.name}</h1>
+                </button>
+              );
+            })}
           </div>
-          <Image
-            className={"ease-in duration-200 shadow-xl"}
-            src={TabData?.image || ""}
-            alt={`${TabData?.tid}`}
-          />
         </div>
-        <div className="ease-in duration-200 col-span-3 flex flex-col justify-center items-start lg:text-start text-center lg:h-full">
-          <h1 className="font-normal lg:mt-0 mt-[16px] text-start flex flex-col ease-in duration-200">
-            <span className="lg:text-[24px] text-xl text-blue-500">
-              {TabData?.title1}
-            </span>
-            <span className="lg:text-[24px] text-xl text-blue-800 font-semibold ease-in duration-200">
-              {TabData?.title2}
-            </span>
-          </h1>
-          <h6 className="lg:text-base text-[12px] leading-[20px] text-start text-blue-800 lg:text-start my-4 ease-in duration-200">
-            {TabData?.desc}
-          </h6>
-        </div>
+        {tabMenu && (
+          <div className="ease-in duration-200 flex lg:flex-row flex-col gap-8 items-center justify-between">
+            <Image
+              src={tabMenu.image || null}
+              alt={tabMenu.name}
+              className="lg:w-2/3 ease-in duration-200"
+            />
+            <div className="flex flex-col gap-4 xl:w-1/3">
+              <h1 className="m-0 p-0 text-2xl text-blue-800 font-semibold">
+                {tabMenu.title1} {tabMenu.title2}
+              </h1>
+              <h1 className="m-0 p-0 text-blue-800 text-base">{tabMenu.desc}</h1>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

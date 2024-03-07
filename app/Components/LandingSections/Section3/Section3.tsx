@@ -13,7 +13,7 @@ const SectionThree = () => {
           <h1 className="text-blue-800 lg:text-[36px] text-xl lg:text-start font-semibold lg:leading-10">
             Your Fingertips
           </h1>
-          <p className="lg:w-4/6 lg:text-base text-base lg:text-start text-blue-800 mt-8">
+          <p className="lg:w-4/6 text-base lg:text-start text-blue-800 mt-8">
             Effortlessly Access Managerial Reports and Save Time. Get Sales &
             Revenue Summary, Lead Conversion Rate, Campaigns Details, Campaigns
             Revenue, Lead Quality Ratio, Lead Summary, Individual SalesPerson
