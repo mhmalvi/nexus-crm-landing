@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/hello/Desktop/Projects/CRM-System-Landing/app/layout\":[\"static/media/c9a5bc6a7c948fb0-s.p.woff2\",\"static/media/d36a2a2bb416f59e-s.p.woff2\",\"static/media/916d3686010a8de2-s.p.woff2\",\"static/media/7777133e901cd5ed-s.p.woff2\",\"static/media/9a881e2ac07d406b-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

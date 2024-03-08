@@ -3,10 +3,20 @@ import React, { ReactEventHandler, useEffect, useState } from "react";
 import { tabMenuList } from "./Section2Data";
 import "./style.css";
 import { tabProp } from "../../type";
+import Images from "../../images";
 import Image from "next/image";
 
 const SectionTwo = () => {
-  const [tabMenu, setTabmenu] = useState<tabProp>();
+  const [tabMenu, setTabmenu] = useState<tabProp>({
+    id: 1,
+    icon: Images.LeadScan,
+    name: "LeadsScan",
+    isActive: false,
+    image: Images.tabImage1,
+    title1: "Leads to Conversion:",
+    title2: "One Platform, Total Control!",
+    desc: `Effortlessly generate and gather leads from multiple sources, all in one platform`,
+  });
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const intervalTime = 5000;
 
@@ -64,7 +74,9 @@ const SectionTwo = () => {
               <h1 className="m-0 p-0 text-2xl text-blue-800 font-semibold">
                 {tabMenu.title1} {tabMenu.title2}
               </h1>
-              <h1 className="m-0 p-0 text-blue-800 text-base">{tabMenu.desc}</h1>
+              <h1 className="m-0 p-0 text-blue-800 text-base">
+                {tabMenu.desc}
+              </h1>
             </div>
           </div>
         )}
