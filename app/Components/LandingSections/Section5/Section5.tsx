@@ -2,7 +2,7 @@
 import React from "react";
 // import Button from "../../Button";
 import Image from "next/image";
-import Images from "../../images"
+import Images from "../../Images";
 const SectionFive = () => {
   return (
     <div className="lg:min-h-[40vh] min-h-full w-full flex items-center justify-center lg:my-0 my-[64px]">

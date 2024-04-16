@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Images from "../../images"
+import Images from "../../Images";
 import Image from "next/image";
 const SectionThree = () => {
   return (

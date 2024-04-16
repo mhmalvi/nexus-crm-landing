@@ -16,7 +16,15 @@ const config: Config = {
       },
       colors: {
         "brand-color": "#7037FF",
-      }
+      },
+      screens: {
+        xs: "640px",
+        sm: "768px",
+        md: "1024px",
+        lg: "1366px",
+        xl: "1600px",
+        "2xl": "1920px",
+      },
     },
   },
   plugins: [

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Button from "../Components/Button";
-import Images from "../Components/images";
+import Images from "../Components/Images";
 import Image from "next/image";
 
 const page = () => {
@@ -125,7 +125,9 @@ const page = () => {
             <div className="flex lg:gap-16 gap-8">
               <Image src={Images.aboutWhyOne} alt="tailored-solutions" />
               <div className="flex flex-col">
-                <h2 className="m-0 p-0 text-2xl text-slate-300">Tailored Solutions</h2>
+                <h2 className="m-0 p-0 text-2xl text-slate-300">
+                  Tailored Solutions
+                </h2>
                 <h3 className="m-0 p-0 text-base text-slate-300">
                   Our CRM software is customizable to fit the specific
                   requirements of your business. Whether you are a small startup
@@ -137,7 +139,9 @@ const page = () => {
             <div className="flex lg:gap-16 gap-8">
               <Image src={Images.aboutWhyTwo} alt="user-friendly-interface" />
               <div className="flex flex-col">
-                <h2 className="m-0 p-0 text-2xl text-slate-300">User-Friendly Interface</h2>
+                <h2 className="m-0 p-0 text-2xl text-slate-300">
+                  User-Friendly Interface
+                </h2>
                 <h3 className="m-0 p-0 text-base text-slate-300">
                   We understand the importance of user experience. Our intuitive
                   interface ensures that your team can seamlessly integrate our
@@ -149,7 +153,9 @@ const page = () => {
             <div className="flex lg:gap-16 gap-8">
               <Image src={Images.aboutWhyThree} alt="Advanced-Features" />
               <div className="flex flex-col">
-                <h2 className="m-0 p-0 text-2xl text-slate-300">Advanced Features</h2>
+                <h2 className="m-0 p-0 text-2xl text-slate-300">
+                  Advanced Features
+                </h2>
                 <h3 className="m-0 p-0 text-base text-slate-300">
                   Stay ahead of the curve with our state-of-the-art features.
                   From lead management and sales automation to customer service
@@ -174,7 +180,9 @@ const page = () => {
               <Image src={Images.aboutWhyFive} alt="Customer-Support" />
               {/* Text */}
               <div className="flex flex-col">
-                <h2 className="m-0 p-0 text-2xl text-slate-300">Customer Support</h2>
+                <h2 className="m-0 p-0 text-2xl text-slate-300">
+                  Customer Support
+                </h2>
                 <h3 className="m-0 p-0 text-base text-slate-300">
                   Your success is our priority. Our dedicated support team is
                   ready to assist you every step of the way, ensuring you get

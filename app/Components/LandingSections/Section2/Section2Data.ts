@@ -1,4 +1,4 @@
-import Images from "../../images"
+import Images from "../../Images";
 
 export const tabMenuList = [
   {
@@ -19,7 +19,7 @@ export const tabMenuList = [
     image: Images.tabImage2,
     title1: "Collaborate",
     title2: "via WhatsApp, Email, and Calls.",
-    desc: `Connect with Leads via Whatsapp, Email or Phone Call in one platform with all the Lead information in front of you`
+    desc: `Connect with Leads via Whatsapp, Email or Phone Call in one platform with all the Lead information in front of you`,
   },
   {
     id: 3,
@@ -50,6 +50,6 @@ export const tabMenuList = [
     title1: "Manage",
     title2: "your own team.",
     desc: `Manage your sales force and admins for easy tracking. 
-`
+`,
   },
 ];

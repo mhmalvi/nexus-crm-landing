@@ -88,9 +88,11 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li className="flex items-center justify-end cursor-pointer ">
-                  <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
-                    Pricing
-                  </p>
+                  <Link href={"/pricing"}>
+                    <p className="hover:scale-[0.95] ease-in duration-200 font-[400] m-0">
+                      Pricing
+                    </p>
+                  </Link>
                 </li>
                 <li className="flex items-center justify-end cursor-pointer ">
                   <Link href={"/support"}>
@@ -114,7 +116,7 @@ const Nav = () => {
               {/* LOGIN */}
               <div className="flex items-center justify-end">
                 <a
-                  href="https://app.queleadscrm.com/register"
+                  href={`http://localhost:3001/register?selected-package=Trial&interval=month`}
                   rel={"noreferrer"}
                   className="ml-5"
                 >
@@ -189,7 +191,7 @@ const Nav = () => {
               <div className="flex flex-col gap-2 justify-center items-center mt-10">
                 <a
                   className="w-full flex flex-col"
-                  href="https://app.queleadscrm.com/register"
+                  href={`http://localhost:3001/register?selected-package=Trial&interval=month`}
                   target={"_blank"}
                   rel={"noreferrer"}
                 >
