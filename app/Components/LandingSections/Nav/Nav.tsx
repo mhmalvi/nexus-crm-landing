@@ -119,7 +119,7 @@ const Nav = () => {
               {/* LOGIN */}
               <div className="flex items-center justify-end">
                 <a
-                  href={`http://localhost:3001/register?selected-package=Trial&interval=month`}
+                  href={`https://app.queleadscrm.com/register?selected-package=Trial&interval=month`}
                   rel={"noreferrer"}
                   className="ml-5"
                 >
@@ -196,7 +196,7 @@ const Nav = () => {
               <div className="flex flex-col gap-2 justify-center items-center mt-10">
                 <a
                   className="w-full flex flex-col"
-                  href={`http://localhost:3001/register?selected-package=Trial&interval=month`}
+                  href={`https://app.queleadscrm.com/register?selected-package=Trial&interval=month`}
                   target={"_blank"}
                   rel={"noreferrer"}
                 >

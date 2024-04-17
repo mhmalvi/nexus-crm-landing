@@ -75,7 +75,7 @@ const Pricing = () => {
           </div>
           <a
             className="w-full flex flex-col"
-            href={`http://localhost:3001/register?selected-package=Trial&interval=month`}
+            href={`https://app.queleadscrm.com/register?selected-package=Trial&interval=month`}
             target={"_blank"}
             rel={"noreferrer"}
           >
@@ -135,7 +135,7 @@ const Pricing = () => {
               </div>
               <a
                 className="w-full flex flex-col"
-                href={`http://localhost:3001/register?selected-package=${item.product.name}&interval=${item.price.data[0].recurring.interval}&priceId=${item.price.data[0].id}`}
+                href={`https://app.queleadscrm.com/register?selected-package=${item.product.name}&interval=${item.price.data[0].recurring.interval}&priceId=${item.price.data[0].id}`}
                 target={"_blank"}
               >
                 <Button variant={1} title="Get Started" />

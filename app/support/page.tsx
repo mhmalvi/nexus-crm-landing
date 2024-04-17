@@ -26,7 +26,7 @@ const Support = () => {
           </p>
         </div>{" "}
         <a
-          href={`http://localhost:3001/register?selected-package=Trial&interval=month`}
+          href={`https://app.queleadscrm.com/register?selected-package=Trial&interval=month`}
           rel={"noreferrer"}
           className="ml-5"
         >
