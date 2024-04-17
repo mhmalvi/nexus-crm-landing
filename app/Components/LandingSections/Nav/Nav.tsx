@@ -58,10 +58,11 @@ const Nav = () => {
         className={`ease-in duration-200 w-full flex items-center  justify-center lg:flex`}
       >
         <div
-          className={`z-19 shadow-md bg-gradient-to-b from-[#f7edff] to-[#c2e8fd] crm-menu-desktop ease-in duration-200 w-screen h-[8vh] ${
+          className={`z-19 shadow-md bg-gray-900
+          crm-menu-desktop ease-in duration-200 w-screen h-[8vh] ${
             showButton ? "flex " : "flex flex-wrap 2xl:gap-8 gap-4"
           } items-center justify-between lg:px-[12vw] px-[4vw] ${
-            isMenuFixed ? `${Draweropen ? "" : "crm-fixed"} w-[100vw] ` : ""
+            isMenuFixed ? Draweropen ? "w-[100vw]" : "crm-fixed w-[100vw]"   : ""
           }`}
         >
           {/* LOGO */}
@@ -78,7 +79,7 @@ const Nav = () => {
             <>
               {/* MENU */}
               <ul
-                className={`flex flex-wrap 2xl:gap-8 gap-4 h-full text-blue-600 gap-2`}
+                className={`flex flex-wrap 2xl:gap-16 gap-4 h-full text-slate-300 gap-2`}
               >
                 <li className="flex items-center justify-end cursor-pointer ">
                   <Link href={"/about-us"}>
@@ -102,9 +103,11 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li className="flex items-center justify-end cursor-pointer ">
-                  <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
-                    Contact Us
-                  </p>
+                  <Link href={"/contact-us"}>
+                    <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
+                      Contact Us
+                    </p>
+                  </Link>
                 </li>
                 <li className="flex items-center justify-end cursor-pointer ">
                   <p className="hover:scale-[0.95] ease-in-out duration-200 font-[400] m-0">
@@ -180,9 +183,11 @@ const Nav = () => {
                 >
                   Support
                 </Link>
-                <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
-                  Contact Us
-                </li>
+                <Link href={"/contact-us"}>
+                  <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
+                    Contact Us
+                  </li>
+                </Link>
                 <li className="text-white text-[24px] border-b-[1px] w-full text-center cursor-pointer">
                   Privacy Policy
                 </li>

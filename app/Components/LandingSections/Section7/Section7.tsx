@@ -4,7 +4,7 @@ import Advantages_SVG from "./Advantages_SVG";
 // import Background from "/public/bgImage/HeroBG.png";
 const SectionSeven = () => {
   return (
-    <div className=" lg:min-h-[40vh] min-h-full w-full flex items-center justify-center bg-gradient-to-b from-[#34217E] to-[#150C48] overflow-hidden shadow-md" 
+    <div className=" lg:min-h-[40vh] min-h-full w-full flex items-center justify-center bg-gradient-to-b from-gray-800 to-gray-900 overflow-hidden shadow-md" 
     >
       <div className="lg:grid lg:grid-cols-2 lg:gap-8 flex flex-col-reverse items-center justify-center w-full lg:px-[12vw] px-[4vw] lg:min-h-[30vh] min-h-full lg:mt-0">
         <div className="lg:col-span-1 flex flex-col items-start justify-center lg:min-h-full lg:mb-0 mb-4">

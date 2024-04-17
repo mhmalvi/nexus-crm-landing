@@ -17,10 +17,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/pricing/page.js"
     ],
-    "/about-us/page": [
+    "/contact-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about-us/page.js"
+      "static/chunks/app/contact-us/page.js"
     ],
     "/support/page": [
       "static/chunks/webpack.js",

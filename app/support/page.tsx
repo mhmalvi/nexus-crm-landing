@@ -24,8 +24,14 @@ const Support = () => {
           <p className="text-base lg:text-start text-center">
             Engage with Queleads&apos;s community of experts for answers.
           </p>
-        </div>
-        <Button title={"Create Account"} variant={1} />
+        </div>{" "}
+        <a
+          href={`http://localhost:3001/register?selected-package=Trial&interval=month`}
+          rel={"noreferrer"}
+          className="ml-5"
+        >
+          <Button title={"Create Account"} variant={1} />
+        </a>
       </div>
       <h1 className="lg:text-2xl mt-8 text-center w-full">
         Frequently Asked Questions (FAQ)

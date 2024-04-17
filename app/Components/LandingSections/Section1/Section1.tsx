@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./section1.css";
 import HeroSVG from "./HeroSVG";
 import Button from "../../Button";
 import HeroBG from "/public/bgImage/HeroBG.png";
 const SectionOne = () => {
+  const [showBar, setShowBar] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // Define the scroll position where you want the menu to become fixed
+      const scrollThreshold = 47; // Adjust this value based on your needs
+      setShowBar(scrollY > scrollThreshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
-      className="lg:min-h-[87vh] min-h-full w-full flex items-center justify-center shadow-xl  "
+      className={`lg:min-h-[87vh] min-h-full w-full flex items-center justify-center shadow-xl ${
+        showBar ? "mt-[8vh]" : "mt-0"
+      }`}
       style={{
         background: `url(${HeroBG.src}) center / cover`,
       }}
@@ -27,8 +44,7 @@ const SectionOne = () => {
           </div>
           <div className=" w-full h-[15vh] lg:mt-0 mt-[48px]">
             <form className="flex flex-col lg:items-start justify-between h-full">
-              
-            <Button title={"⚪ Live Product Demo"} variant={1} />
+              <Button title={"⚪ Live Product Demo"} variant={1} />
             </form>
           </div>
         </div>

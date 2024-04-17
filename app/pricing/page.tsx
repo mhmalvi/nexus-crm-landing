@@ -89,7 +89,7 @@ const Pricing = () => {
               key={index}
               className={`flex flex-col border xl:w-1/4 lg:w-1/3 w-full h-5/6 gap-8 rounded-md items-center justify-center px-4 py-16 bg-[#ffffff11] overflow-hidden shadow-md backdrop-blur-2xl ease-in duration-100`}
             >
-              <div className="absolute h-8 w-32 bg-brand-color top-4 -right-8 rotate-45 flex items-center justify-center">
+              <div className="absolute h-8 w-40 bg-brand-color top-6 -right-10 rotate-45 flex items-center justify-center">
                 <h1 className="m-0 p-0">Save 25%</h1>
               </div>
               <h1 className={`p-0 m-0 text-xl text-slate-300`}>
@@ -135,7 +135,7 @@ const Pricing = () => {
               </div>
               <a
                 className="w-full flex flex-col"
-                href={`http://localhost:3001/register?selected-package=${item.product.name}&interval=${item.price.data[0].recurring.interval}`}
+                href={`http://localhost:3001/register?selected-package=${item.product.name}&interval=${item.price.data[0].recurring.interval}&priceId=${item.price.data[0].id}`}
                 target={"_blank"}
               >
                 <Button variant={1} title="Get Started" />

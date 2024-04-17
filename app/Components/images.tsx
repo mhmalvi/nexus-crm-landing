@@ -59,6 +59,8 @@ import aboutWhyFour from "/public/aboutSectionImages/about-why-4.svg";
 import aboutWhyFive from "/public/aboutSectionImages/about-why-5.svg";
 import aboutWhyMain from "/public/aboutSectionImages/about-why-main.svg";
 
+// Contact Us
+import contactUs from "/public/svg/contact-us-icon.svg";
 
 const Images = {
   LeadScan,
@@ -101,7 +103,7 @@ const Images = {
   aboutWhyFour,
   aboutWhyFive,
   aboutWhyMain,
-  
+  contactUs
 };
 
 export default Images;

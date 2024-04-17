@@ -21,7 +21,7 @@ const SectionTen = () => {
     };
   }, []);
   return (
-    <div className="lg:min-h-[92vh] min-h-[90vh] bg-gradient-to-b from-[#34217E] to-[#150C48] w-full flex items-center justify-center lg:mt-0 mt-16">
+    <div className="lg:min-h-[92vh] min-h-[90vh] bg-gradient-to-b from-gray-800 to-gray-900 w-full flex items-center justify-center lg:mt-0 mt-16">
       <div className="flex flex-col justify-center w-full lg:px-[12vw] px-[4vw] lg:min-h-[92vh] min-h-[90vh]">
         <h6 className="text-slate-300 lg:text-[32px] text-xl text-start m-0">
           The best deal is here to
