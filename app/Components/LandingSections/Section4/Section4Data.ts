@@ -1,4 +1,4 @@
-import Images from "../../Images";
+import Images from "../../images";
 export const companyPhotos = [
   {
     image: Images.clogo1,

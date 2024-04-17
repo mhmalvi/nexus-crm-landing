@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Button from "../Components/Button";
-import Images from "../Components/Images";
+import Images from "../Components/images";
 import Image from "next/image";
 
 const page = () => {

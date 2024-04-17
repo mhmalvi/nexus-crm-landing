@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Images from "../../Images";
+import Images from "../../images";
 import { competitors } from "./TenData";
 const SectionTen = () => {
   const [imgWidth, setImgWidth] = useState(100);

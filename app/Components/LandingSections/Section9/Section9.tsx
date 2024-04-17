@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Images from "../../Images";
+import Images from "../../images";
 import Button from "../../Button";
 import Image from "next/image";
 

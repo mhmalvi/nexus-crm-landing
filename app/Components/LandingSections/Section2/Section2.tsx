@@ -3,7 +3,7 @@ import React, { ReactEventHandler, useEffect, useState } from "react";
 import { tabMenuList } from "./Section2Data";
 import "./style.css";
 import { tabProp } from "../../type";
-import Images from "../../Images";
+import Images from "../../images";
 import Image from "next/image";
 
 const SectionTwo = () => {
