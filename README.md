@@ -1,4 +1,6 @@
 <!-- repo-card -->
+![nexus-crm-landing](docs/assets/screenshot.png)
+
 ![nexus-crm-landing](docs/assets/social-card.png)
 
 ![nexus-crm-landing — architecture](docs/assets/architecture.png)
