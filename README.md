@@ -1,6 +1,8 @@
 <!-- repo-card -->
 ![nexus-crm-landing](docs/assets/social-card.png)
 
+![nexus-crm-landing — architecture](docs/assets/architecture.png)
+
 # Nexus CRM Landing
 
 The marketing and landing page application for the **Nexus CRM** microservices platform. Built with Next.js 14 and TypeScript, this site serves as the public-facing entry point, showcasing product features, pricing plans, and company information.
